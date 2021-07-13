@@ -34,10 +34,10 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.mnuMainBooks = new System.Windows.Forms.MenuStrip();
             this.lblFill2 = new System.Windows.Forms.Label();
             this.mnuAuthors = new System.Windows.Forms.MenuStrip();
-            this.addBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.booksListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAuthorsItemAddAuthors = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAuthorsItemAuthorsList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAuthorsItemEditAuthors = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAuthorsItemDeleteAuthors = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAuthors.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,46 +95,54 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.mnuAuthors.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuAuthors.GripMargin = new System.Windows.Forms.Padding(0);
             this.mnuAuthors.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addBooksToolStripMenuItem,
-            this.booksListToolStripMenuItem,
-            this.editBooksToolStripMenuItem,
-            this.deleteBooksToolStripMenuItem});
-            this.mnuAuthors.Location = new System.Drawing.Point(159, 225);
+            this.mnuAuthorsItemAddAuthors,
+            this.mnuAuthorsItemAuthorsList,
+            this.mnuAuthorsItemEditAuthors,
+            this.mnuAuthorsItemDeleteAuthors});
+            this.mnuAuthors.Location = new System.Drawing.Point(125, 0);
             this.mnuAuthors.Name = "mnuAuthors";
             this.mnuAuthors.Padding = new System.Windows.Forms.Padding(0);
-            this.mnuAuthors.Size = new System.Drawing.Size(483, 50);
+            this.mnuAuthors.Size = new System.Drawing.Size(551, 50);
             this.mnuAuthors.TabIndex = 6;
             this.mnuAuthors.Text = "menuStrip1";
             // 
-            // addBooksToolStripMenuItem
+            // mnuAuthorsItemAddAuthors
             // 
-            this.addBooksToolStripMenuItem.Name = "addBooksToolStripMenuItem";
-            this.addBooksToolStripMenuItem.Padding = new System.Windows.Forms.Padding(14, 0, 4, 0);
-            this.addBooksToolStripMenuItem.Size = new System.Drawing.Size(125, 50);
-            this.addBooksToolStripMenuItem.Text = "&Add Books";
+            this.mnuAuthorsItemAddAuthors.Name = "mnuAuthorsItemAddAuthors";
+            this.mnuAuthorsItemAddAuthors.Padding = new System.Windows.Forms.Padding(14, 0, 4, 0);
+            this.mnuAuthorsItemAddAuthors.Size = new System.Drawing.Size(142, 50);
+            this.mnuAuthorsItemAddAuthors.Text = "&Add Authors";
+            this.mnuAuthorsItemAddAuthors.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuAuthorsItemAddAuthors.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // booksListToolStripMenuItem
+            // mnuAuthorsItemAuthorsList
             // 
-            this.booksListToolStripMenuItem.Name = "booksListToolStripMenuItem";
-            this.booksListToolStripMenuItem.Size = new System.Drawing.Size(109, 50);
-            this.booksListToolStripMenuItem.Text = "&Books List";
+            this.mnuAuthorsItemAuthorsList.Name = "mnuAuthorsItemAuthorsList";
+            this.mnuAuthorsItemAuthorsList.Size = new System.Drawing.Size(126, 50);
+            this.mnuAuthorsItemAuthorsList.Text = "&Authors List";
+            this.mnuAuthorsItemAuthorsList.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuAuthorsItemAuthorsList.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // editBooksToolStripMenuItem
+            // mnuAuthorsItemEditAuthors
             // 
-            this.editBooksToolStripMenuItem.Name = "editBooksToolStripMenuItem";
-            this.editBooksToolStripMenuItem.Size = new System.Drawing.Size(113, 50);
-            this.editBooksToolStripMenuItem.Text = "&Edit Books";
+            this.mnuAuthorsItemEditAuthors.Name = "mnuAuthorsItemEditAuthors";
+            this.mnuAuthorsItemEditAuthors.Size = new System.Drawing.Size(130, 50);
+            this.mnuAuthorsItemEditAuthors.Text = "&Edit Authors";
+            this.mnuAuthorsItemEditAuthors.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuAuthorsItemEditAuthors.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // deleteBooksToolStripMenuItem
+            // mnuAuthorsItemDeleteAuthors
             // 
-            this.deleteBooksToolStripMenuItem.Name = "deleteBooksToolStripMenuItem";
-            this.deleteBooksToolStripMenuItem.Size = new System.Drawing.Size(136, 50);
-            this.deleteBooksToolStripMenuItem.Text = "&Delete Books";
+            this.mnuAuthorsItemDeleteAuthors.Name = "mnuAuthorsItemDeleteAuthors";
+            this.mnuAuthorsItemDeleteAuthors.Size = new System.Drawing.Size(153, 50);
+            this.mnuAuthorsItemDeleteAuthors.Text = "&Delete Authors";
+            this.mnuAuthorsItemDeleteAuthors.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuAuthorsItemDeleteAuthors.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
             // frmAuthors
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.mnuAuthors);
             this.Controls.Add(this.label1);
@@ -158,9 +166,9 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
         private System.Windows.Forms.MenuStrip mnuMainBooks;
         private System.Windows.Forms.Label lblFill2;
         private System.Windows.Forms.MenuStrip mnuAuthors;
-        private System.Windows.Forms.ToolStripMenuItem addBooksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem booksListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editBooksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteBooksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuAuthorsItemAddAuthors;
+        private System.Windows.Forms.ToolStripMenuItem mnuAuthorsItemAuthorsList;
+        private System.Windows.Forms.ToolStripMenuItem mnuAuthorsItemEditAuthors;
+        private System.Windows.Forms.ToolStripMenuItem mnuAuthorsItemDeleteAuthors;
     }
 }

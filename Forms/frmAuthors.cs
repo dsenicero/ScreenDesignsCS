@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace SeniceroDAngelo_ScreenDesign.Forms
@@ -40,6 +41,16 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
                     return ThemeColor.PrimaryColor;
                 }
             }
+        }
+
+        private void myToolStripMenuItem_MouseEnter(object sender,EventArgs e)
+        {
+            ((ToolStripMenuItem)sender).ForeColor = Color.White; //new color
+        }
+
+        private void myToolStripMenuItem_MouseLeave(object sender,EventArgs e)
+        {
+            ((ToolStripMenuItem)sender).ForeColor = Color.Black; //original color
         }
     }
 }

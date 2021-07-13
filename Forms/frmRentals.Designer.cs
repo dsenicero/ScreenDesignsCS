@@ -32,8 +32,8 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.lblFill = new System.Windows.Forms.Label();
             this.mnuRentals = new System.Windows.Forms.MenuStrip();
-            this.addBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.booksListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuRentalsItemIssueBooks = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuRentalsItemReturnBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuRentals.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,8 +66,8 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.mnuRentals.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuRentals.GripMargin = new System.Windows.Forms.Padding(0);
             this.mnuRentals.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addBooksToolStripMenuItem,
-            this.booksListToolStripMenuItem});
+            this.mnuRentalsItemIssueBooks,
+            this.mnuRentalsItemReturnBooks});
             this.mnuRentals.Location = new System.Drawing.Point(273, 0);
             this.mnuRentals.Name = "mnuRentals";
             this.mnuRentals.Padding = new System.Windows.Forms.Padding(0);
@@ -75,25 +75,27 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.mnuRentals.TabIndex = 6;
             this.mnuRentals.Text = "mnuMainBooks";
             // 
-            // addBooksToolStripMenuItem
+            // mnuRentalsItemIssueBooks
             // 
-            this.addBooksToolStripMenuItem.Name = "addBooksToolStripMenuItem";
-            this.addBooksToolStripMenuItem.Padding = new System.Windows.Forms.Padding(14, 0, 4, 0);
-            this.addBooksToolStripMenuItem.Size = new System.Drawing.Size(125, 50);
-            this.addBooksToolStripMenuItem.Text = "&Issue Book";
-            this.addBooksToolStripMenuItem.MouseEnter += new System.EventHandler(this.addBooksToolStripMenuItem_MouseEnter);
-            this.addBooksToolStripMenuItem.MouseLeave += new System.EventHandler(this.addBooksToolStripMenuItem_MouseLeave);
+            this.mnuRentalsItemIssueBooks.Name = "mnuRentalsItemIssueBooks";
+            this.mnuRentalsItemIssueBooks.Padding = new System.Windows.Forms.Padding(14, 0, 4, 0);
+            this.mnuRentalsItemIssueBooks.Size = new System.Drawing.Size(125, 50);
+            this.mnuRentalsItemIssueBooks.Text = "&Issue Book";
+            this.mnuRentalsItemIssueBooks.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuRentalsItemIssueBooks.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // booksListToolStripMenuItem
+            // mnuRentalsItemReturnBooks
             // 
-            this.booksListToolStripMenuItem.Name = "booksListToolStripMenuItem";
-            this.booksListToolStripMenuItem.Size = new System.Drawing.Size(129, 50);
-            this.booksListToolStripMenuItem.Text = "&Return Book";
+            this.mnuRentalsItemReturnBooks.Name = "mnuRentalsItemReturnBooks";
+            this.mnuRentalsItemReturnBooks.Size = new System.Drawing.Size(129, 50);
+            this.mnuRentalsItemReturnBooks.Text = "&Return Book";
+            this.mnuRentalsItemReturnBooks.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuRentalsItemReturnBooks.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
             // frmRentals
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblFill);
@@ -116,7 +118,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblFill;
         private System.Windows.Forms.MenuStrip mnuRentals;
-        private System.Windows.Forms.ToolStripMenuItem addBooksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem booksListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuRentalsItemIssueBooks;
+        private System.Windows.Forms.ToolStripMenuItem mnuRentalsItemReturnBooks;
     }
 }

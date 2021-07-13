@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 using SeniceroDAngelo_ScreenDesign.Forms;
@@ -31,12 +32,29 @@ namespace SeniceroDAngelo_ScreenDesign
                     DisableButton();
                     Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
-                    currentButton.BackColor = color;
-                    currentButton.ForeColor = Color.White;
-                    pnlTitle.BackColor = color;
-                    pnlLogo.BackColor = ThemeColor.ChangeColorBrightness(color,-0.3);
                     ThemeColor.PrimaryColor = color;
                     ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color,-0.3);
+                    foreach(Button button in pnlMenu.Controls.OfType<Button>())
+                    {
+                        button.BackColor = ThemeColor.SecondaryColor;
+                        if(ThemeColor.SecondaryColor.R * 0.2126 + ThemeColor.SecondaryColor.G *
+                            0.7152 + ThemeColor.SecondaryColor.B * 0.0722 > 255 / 2)
+                        {
+                            //dark color
+                            button.ForeColor = Color.Black;
+                        }
+                        else
+                        {
+                            //light color
+                            button.ForeColor = Color.White;
+                        }
+
+                    }
+                    currentButton.BackColor = ThemeColor.PrimaryColor;
+                    currentButton.ForeColor = Color.White;
+                    pnlTitle.BackColor = ThemeColor.PrimaryColor;
+                    pnlLogo.BackColor = ThemeColor.SecondaryColor;
+                    pnlMenu.BackColor = ThemeColor.SecondaryColor;
                     currentButton.Enabled = false;
                 }
             }
@@ -145,8 +163,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    books.Show();
             //}
             if(currentButton != (Button)sender)
+            {
                 OpenChildForm(new Forms.frmBooks(),sender);
-
+            }
         }
 
         private void btnAuthors_Click(object sender,EventArgs e)
@@ -163,7 +182,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    authors.Show();
             //}
             if(currentButton != (Button)sender)
+            {
                 OpenChildForm(new Forms.frmAuthors(),sender);
+            }
         }
 
         private void btnRentals_Click(object sender,EventArgs e)
@@ -180,7 +201,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    rentals.Show();
             //}
             if(currentButton != (Button)sender)
+            {
                 OpenChildForm(new Forms.frmRentals(),sender);
+            }
         }
 
         private void btnAccounts_Click(object sender,EventArgs e)
@@ -197,7 +220,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    accounts.Show();
             //}
             if(currentButton != (Button)sender)
+            {
                 OpenChildForm(new Forms.frmAccounts(),sender);
+            }
         }
 
         private void btnSubjects_Click(object sender,EventArgs e)
@@ -214,7 +239,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    subjects.Show();
             //}
             if(currentButton != (Button)sender)
+            {
                 OpenChildForm(new Forms.frmSubjects(),sender);
+            }
         }
 
         private void Reset()

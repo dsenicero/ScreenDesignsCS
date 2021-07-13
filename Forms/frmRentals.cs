@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace SeniceroDAngelo_ScreenDesign.Forms
@@ -41,15 +42,14 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
                 }
             }
         }
-
-        private void addBooksToolStripMenuItem_MouseEnter(object sender,System.EventArgs e)
+        private void myToolStripMenuItem_MouseEnter(object sender,EventArgs e)
         {
             ((ToolStripMenuItem)sender).ForeColor = Color.White; //new color
         }
 
-        private void addBooksToolStripMenuItem_MouseLeave(object sender,System.EventArgs e)
+        private void myToolStripMenuItem_MouseLeave(object sender,EventArgs e)
         {
-            ((ToolStripMenuItem)sender).ForeColor = Color.Black; //new color
+            ((ToolStripMenuItem)sender).ForeColor = Color.Black; //original color
         }
     }
 }

@@ -30,10 +30,10 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
         private void InitializeComponent()
         {
             this.mnuBooks = new System.Windows.Forms.MenuStrip();
-            this.addBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.booksListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBooksItemAddBooks = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBooksItemBooksList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBooksItemEditBooks = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBooksItemDeleteBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.lblFill = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.mnuBooks.SuspendLayout();
@@ -48,10 +48,10 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.mnuBooks.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuBooks.GripMargin = new System.Windows.Forms.Padding(0);
             this.mnuBooks.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addBooksToolStripMenuItem,
-            this.booksListToolStripMenuItem,
-            this.editBooksToolStripMenuItem,
-            this.deleteBooksToolStripMenuItem});
+            this.mnuBooksItemAddBooks,
+            this.mnuBooksItemBooksList,
+            this.mnuBooksItemEditBooks,
+            this.mnuBooksItemDeleteBooks});
             this.mnuBooks.Location = new System.Drawing.Point(159, 0);
             this.mnuBooks.Name = "mnuBooks";
             this.mnuBooks.Padding = new System.Windows.Forms.Padding(0);
@@ -59,30 +59,38 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.mnuBooks.TabIndex = 0;
             this.mnuBooks.Text = "mnuMainBooks";
             // 
-            // addBooksToolStripMenuItem
+            // mnuBooksItemAddBooks
             // 
-            this.addBooksToolStripMenuItem.Name = "addBooksToolStripMenuItem";
-            this.addBooksToolStripMenuItem.Padding = new System.Windows.Forms.Padding(14, 0, 4, 0);
-            this.addBooksToolStripMenuItem.Size = new System.Drawing.Size(125, 50);
-            this.addBooksToolStripMenuItem.Text = "&Add Books";
+            this.mnuBooksItemAddBooks.Name = "mnuBooksItemAddBooks";
+            this.mnuBooksItemAddBooks.Padding = new System.Windows.Forms.Padding(14, 0, 4, 0);
+            this.mnuBooksItemAddBooks.Size = new System.Drawing.Size(125, 50);
+            this.mnuBooksItemAddBooks.Text = "&Add Books";
+            this.mnuBooksItemAddBooks.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuBooksItemAddBooks.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // booksListToolStripMenuItem
+            // mnuBooksItemBooksList
             // 
-            this.booksListToolStripMenuItem.Name = "booksListToolStripMenuItem";
-            this.booksListToolStripMenuItem.Size = new System.Drawing.Size(109, 50);
-            this.booksListToolStripMenuItem.Text = "&Books List";
+            this.mnuBooksItemBooksList.Name = "mnuBooksItemBooksList";
+            this.mnuBooksItemBooksList.Size = new System.Drawing.Size(109, 50);
+            this.mnuBooksItemBooksList.Text = "&Books List";
+            this.mnuBooksItemBooksList.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuBooksItemBooksList.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // editBooksToolStripMenuItem
+            // mnuBooksItemEditBooks
             // 
-            this.editBooksToolStripMenuItem.Name = "editBooksToolStripMenuItem";
-            this.editBooksToolStripMenuItem.Size = new System.Drawing.Size(113, 50);
-            this.editBooksToolStripMenuItem.Text = "&Edit Books";
+            this.mnuBooksItemEditBooks.Name = "mnuBooksItemEditBooks";
+            this.mnuBooksItemEditBooks.Size = new System.Drawing.Size(113, 50);
+            this.mnuBooksItemEditBooks.Text = "&Edit Books";
+            this.mnuBooksItemEditBooks.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuBooksItemEditBooks.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // deleteBooksToolStripMenuItem
+            // mnuBooksItemDeleteBooks
             // 
-            this.deleteBooksToolStripMenuItem.Name = "deleteBooksToolStripMenuItem";
-            this.deleteBooksToolStripMenuItem.Size = new System.Drawing.Size(136, 50);
-            this.deleteBooksToolStripMenuItem.Text = "&Delete Books";
+            this.mnuBooksItemDeleteBooks.Name = "mnuBooksItemDeleteBooks";
+            this.mnuBooksItemDeleteBooks.Size = new System.Drawing.Size(136, 50);
+            this.mnuBooksItemDeleteBooks.Text = "&Delete Books";
+            this.mnuBooksItemDeleteBooks.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuBooksItemDeleteBooks.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
             // lblFill
             // 
@@ -108,7 +116,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
@@ -134,10 +142,10 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
         #endregion
 
         private System.Windows.Forms.MenuStrip mnuBooks;
-        private System.Windows.Forms.ToolStripMenuItem addBooksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editBooksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteBooksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem booksListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuBooksItemAddBooks;
+        private System.Windows.Forms.ToolStripMenuItem mnuBooksItemEditBooks;
+        private System.Windows.Forms.ToolStripMenuItem mnuBooksItemDeleteBooks;
+        private System.Windows.Forms.ToolStripMenuItem mnuBooksItemBooksList;
         private System.Windows.Forms.Label lblFill;
         private System.Windows.Forms.Label label1;
     }

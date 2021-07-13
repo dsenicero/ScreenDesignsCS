@@ -36,20 +36,20 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.editBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAccounts = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAccountsItemAddAccounts = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAccountsItemAccountsList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAccountsItemEditAccounts = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAccountsItemDeleteAccounts = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAccounts.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(675, 0);
+            this.label1.Location = new System.Drawing.Point(698, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 50);
+            this.label1.Size = new System.Drawing.Size(103, 50);
             this.label1.TabIndex = 8;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -59,7 +59,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.lblFill.Location = new System.Drawing.Point(-1, 0);
             this.lblFill.Margin = new System.Windows.Forms.Padding(0);
             this.lblFill.Name = "lblFill";
-            this.lblFill.Size = new System.Drawing.Size(125, 50);
+            this.lblFill.Size = new System.Drawing.Size(103, 50);
             this.lblFill.TabIndex = 7;
             this.lblFill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -97,46 +97,54 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.mnuAccounts.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuAccounts.GripMargin = new System.Windows.Forms.Padding(0);
             this.mnuAccounts.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4});
-            this.mnuAccounts.Location = new System.Drawing.Point(159, 0);
+            this.mnuAccountsItemAddAccounts,
+            this.mnuAccountsItemAccountsList,
+            this.mnuAccountsItemEditAccounts,
+            this.mnuAccountsItemDeleteAccounts});
+            this.mnuAccounts.Location = new System.Drawing.Point(102, 0);
             this.mnuAccounts.Name = "mnuAccounts";
             this.mnuAccounts.Padding = new System.Windows.Forms.Padding(0);
-            this.mnuAccounts.Size = new System.Drawing.Size(483, 50);
+            this.mnuAccounts.Size = new System.Drawing.Size(596, 50);
             this.mnuAccounts.TabIndex = 9;
             this.mnuAccounts.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
+            // mnuAccountsItemAddAccounts
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(14, 0, 4, 0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(125, 50);
-            this.toolStripMenuItem1.Text = "&Add Books";
+            this.mnuAccountsItemAddAccounts.Name = "mnuAccountsItemAddAccounts";
+            this.mnuAccountsItemAddAccounts.Padding = new System.Windows.Forms.Padding(14, 0, 4, 0);
+            this.mnuAccountsItemAddAccounts.Size = new System.Drawing.Size(153, 50);
+            this.mnuAccountsItemAddAccounts.Text = "&Add Accounts";
+            this.mnuAccountsItemAddAccounts.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuAccountsItemAddAccounts.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // toolStripMenuItem2
+            // mnuAccountsItemAccountsList
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(109, 50);
-            this.toolStripMenuItem2.Text = "&Books List";
+            this.mnuAccountsItemAccountsList.Name = "mnuAccountsItemAccountsList";
+            this.mnuAccountsItemAccountsList.Size = new System.Drawing.Size(137, 50);
+            this.mnuAccountsItemAccountsList.Text = "&Accounts List";
+            this.mnuAccountsItemAccountsList.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuAccountsItemAccountsList.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // toolStripMenuItem3
+            // mnuAccountsItemEditAccounts
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(113, 50);
-            this.toolStripMenuItem3.Text = "&Edit Books";
+            this.mnuAccountsItemEditAccounts.Name = "mnuAccountsItemEditAccounts";
+            this.mnuAccountsItemEditAccounts.Size = new System.Drawing.Size(141, 50);
+            this.mnuAccountsItemEditAccounts.Text = "&Edit Accounts";
+            this.mnuAccountsItemEditAccounts.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuAccountsItemEditAccounts.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
-            // toolStripMenuItem4
+            // mnuAccountsItemDeleteAccounts
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(136, 50);
-            this.toolStripMenuItem4.Text = "&Delete Books";
+            this.mnuAccountsItemDeleteAccounts.Name = "mnuAccountsItemDeleteAccounts";
+            this.mnuAccountsItemDeleteAccounts.Size = new System.Drawing.Size(164, 50);
+            this.mnuAccountsItemDeleteAccounts.Text = "&Delete Accounts";
+            this.mnuAccountsItemDeleteAccounts.MouseEnter += new System.EventHandler(this.myToolStripMenuItem_MouseEnter);
+            this.mnuAccountsItemDeleteAccounts.MouseLeave += new System.EventHandler(this.myToolStripMenuItem_MouseLeave);
             // 
             // frmAccounts
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.mnuAccounts);
             this.Controls.Add(this.label1);
@@ -163,9 +171,9 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
         private System.Windows.Forms.ToolStripMenuItem editBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteBooksToolStripMenuItem;
         private System.Windows.Forms.MenuStrip mnuAccounts;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem mnuAccountsItemAddAccounts;
+        private System.Windows.Forms.ToolStripMenuItem mnuAccountsItemAccountsList;
+        private System.Windows.Forms.ToolStripMenuItem mnuAccountsItemEditAccounts;
+        private System.Windows.Forms.ToolStripMenuItem mnuAccountsItemDeleteAccounts;
     }
 }

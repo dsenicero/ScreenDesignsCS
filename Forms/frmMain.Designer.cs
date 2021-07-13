@@ -200,7 +200,6 @@ namespace SeniceroDAngelo_ScreenDesign
             // pnlTitle
             // 
             this.pnlTitle.BackColor = System.Drawing.Color.Teal;
-            this.pnlTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTitle.Controls.Add(this.pnlUser);
             this.pnlTitle.Controls.Add(this.lblMenuName);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
@@ -215,9 +214,9 @@ namespace SeniceroDAngelo_ScreenDesign
             this.pnlUser.Controls.Add(this.lblUsername);
             this.pnlUser.Controls.Add(this.lblID);
             this.pnlUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlUser.Location = new System.Drawing.Point(512, 0);
+            this.pnlUser.Location = new System.Drawing.Point(514, 0);
             this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(286, 98);
+            this.pnlUser.Size = new System.Drawing.Size(286, 100);
             this.pnlUser.TabIndex = 0;
             // 
             // lblUsername
