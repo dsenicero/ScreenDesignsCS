@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace SeniceroDAngelo_ScreenDesign.Forms
 {
@@ -7,7 +6,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
     {
         public frmLogin()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }

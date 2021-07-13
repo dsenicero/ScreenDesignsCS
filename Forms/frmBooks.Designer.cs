@@ -43,7 +43,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             this.mnuBooks.AllowMerge = false;
             this.mnuBooks.AutoSize = false;
-            this.mnuBooks.BackColor = System.Drawing.Color.White;
+            this.mnuBooks.BackColor = System.Drawing.SystemColors.Control;
             this.mnuBooks.Dock = System.Windows.Forms.DockStyle.None;
             this.mnuBooks.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuBooks.GripMargin = new System.Windows.Forms.Padding(0);

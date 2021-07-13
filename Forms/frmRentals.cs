@@ -8,8 +8,8 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
     {
         public frmRentals()
         {
-            InitializeComponent();
-            mnuRentals.Renderer = new MyRenderer();
+            this.InitializeComponent();
+            this.mnuRentals.Renderer = new MyRenderer();
         }
         private class MyRenderer:ToolStripProfessionalRenderer
         {

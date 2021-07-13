@@ -211,9 +211,11 @@ namespace SeniceroDAngelo_ScreenDesign
             // pnlUser
             // 
             this.pnlUser.BackColor = System.Drawing.Color.White;
+            this.pnlUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlUser.Controls.Add(this.lblUsername);
             this.pnlUser.Controls.Add(this.lblID);
             this.pnlUser.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlUser.Location = new System.Drawing.Point(514, 0);
             this.pnlUser.Name = "pnlUser";
             this.pnlUser.Size = new System.Drawing.Size(286, 100);
@@ -221,7 +223,7 @@ namespace SeniceroDAngelo_ScreenDesign
             // 
             // lblUsername
             // 
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(114, 9);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(160, 25);
@@ -230,7 +232,7 @@ namespace SeniceroDAngelo_ScreenDesign
             // 
             // lblID
             // 
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.Location = new System.Drawing.Point(194, 34);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(80, 20);

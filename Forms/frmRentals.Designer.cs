@@ -61,7 +61,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             this.mnuRentals.AllowMerge = false;
             this.mnuRentals.AutoSize = false;
-            this.mnuRentals.BackColor = System.Drawing.Color.White;
+            this.mnuRentals.BackColor = System.Drawing.SystemColors.Control;
             this.mnuRentals.Dock = System.Windows.Forms.DockStyle.None;
             this.mnuRentals.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuRentals.GripMargin = new System.Windows.Forms.Padding(0);

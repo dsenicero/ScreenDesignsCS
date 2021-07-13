@@ -3,8 +3,6 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-using SeniceroDAngelo_ScreenDesign.Forms;
-
 namespace SeniceroDAngelo_ScreenDesign
 {
     public partial class frmMain:Form
@@ -14,12 +12,12 @@ namespace SeniceroDAngelo_ScreenDesign
         private int tempIndex;
         private Form activeForm;
 
-        private frmDashboard dashboard = new frmDashboard();
-        private frmSubjects subjects = new frmSubjects();
-        private frmAuthors authors = new frmAuthors();
-        private frmBooks books = new frmBooks();
-        private frmRentals rentals = new frmRentals();
-        private frmAccounts accounts = new frmAccounts();
+        //private frmDashboard dashboard = new frmDashboard();
+        //private frmSubjects subjects = new frmSubjects();
+        //private frmAuthors authors = new frmAuthors();
+        //private frmBooks books = new frmBooks();
+        //private frmRentals rentals = new frmRentals();
+        //private frmAccounts accounts = new frmAccounts();
 
         public const string TITLE = "My Library Program";
 
@@ -27,14 +25,14 @@ namespace SeniceroDAngelo_ScreenDesign
         {
             if(btnSender != null)
             {
-                if(currentButton != (Button)btnSender)
+                if(this.currentButton != (Button)btnSender)
                 {
-                    DisableButton();
-                    Color color = SelectThemeColor();
-                    currentButton = (Button)btnSender;
+                    this.DisableButton();
+                    Color color = this.SelectThemeColor();
+                    this.currentButton = (Button)btnSender;
                     ThemeColor.PrimaryColor = color;
                     ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color,-0.3);
-                    foreach(Button button in pnlMenu.Controls.OfType<Button>())
+                    foreach(Button button in this.pnlMenu.Controls.OfType<Button>())
                     {
                         button.BackColor = ThemeColor.SecondaryColor;
                         if(ThemeColor.SecondaryColor.R * 0.2126 + ThemeColor.SecondaryColor.G *
@@ -50,12 +48,12 @@ namespace SeniceroDAngelo_ScreenDesign
                         }
 
                     }
-                    currentButton.BackColor = ThemeColor.PrimaryColor;
-                    currentButton.ForeColor = Color.White;
-                    pnlTitle.BackColor = ThemeColor.PrimaryColor;
-                    pnlLogo.BackColor = ThemeColor.SecondaryColor;
-                    pnlMenu.BackColor = ThemeColor.SecondaryColor;
-                    currentButton.Enabled = false;
+                    this.currentButton.BackColor = ThemeColor.PrimaryColor;
+                    this.currentButton.ForeColor = Color.White;
+                    this.pnlTitle.BackColor = ThemeColor.PrimaryColor;
+                    this.pnlLogo.BackColor = ThemeColor.SecondaryColor;
+                    this.pnlMenu.BackColor = ThemeColor.SecondaryColor;
+                    this.currentButton.Enabled = false;
                 }
             }
 
@@ -63,7 +61,7 @@ namespace SeniceroDAngelo_ScreenDesign
 
         private void DisableButton()
         {
-            foreach(Control previousBtn in pnlMenu.Controls)
+            foreach(Control previousBtn in this.pnlMenu.Controls)
             {
                 if(previousBtn.GetType() == typeof(Button))
                 {
@@ -76,43 +74,40 @@ namespace SeniceroDAngelo_ScreenDesign
 
         private void OpenChildForm(Form childForm,object btnSender)
         {
-            if(activeForm != null)
+            if(this.activeForm != null)
             {
-                activeForm.Close();
-                Reset();
+                this.activeForm.Close();
+                this.Reset();
             }
 
-            ActivateButton(btnSender);
-            activeForm = childForm;
+            this.ActivateButton(btnSender);
+            this.activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            pnlForms.Controls.Add(childForm);
-            pnlForms.Tag = childForm;
+            this.pnlForms.Controls.Add(childForm);
+            this.pnlForms.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            lblMenuName.Text = childForm.Text;
-            Text = TITLE + " - " + childForm.Text;
+            this.lblMenuName.Text = childForm.Text;
+            this.Text = TITLE + " - " + childForm.Text;
         }
-
-
-
         public frmMain()
         {
-            InitializeComponent();
-            random = new Random();
-            Text = TITLE;
-            MaximizedBounds = Screen.FromHandle(Handle).WorkingArea;
+            this.InitializeComponent();
+            this.random = new Random();
+            this.Text = TITLE;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private Color SelectThemeColor()
         {
-            int index = random.Next(ThemeColor.ColorList.Count);
-            while(tempIndex == index)
+            int index = this.random.Next(ThemeColor.ColorList.Count);
+            while(this.tempIndex == index)
             {
-                index = random.Next(ThemeColor.ColorList.Count);
+                index = this.random.Next(ThemeColor.ColorList.Count);
             }
-            tempIndex = index;
+            this.tempIndex = index;
             string color = ThemeColor.ColorList[index];
             return ColorTranslator.FromHtml(color);
         }
@@ -125,7 +120,7 @@ namespace SeniceroDAngelo_ScreenDesign
             //dashboard.AutoScroll = true;
             //pnlForms.Controls.Add(dashboard);
             //dashboard.Show();
-            btnDashboard.PerformClick();
+            this.btnDashboard.PerformClick();
         }
 
         private void btnDashboard_Click(object sender,EventArgs e)
@@ -141,11 +136,10 @@ namespace SeniceroDAngelo_ScreenDesign
             //    pnlForms.Controls.Add(dashboard);
             //    dashboard.Show();
             //}
-            if(currentButton != (Button)sender)
+            if(this.currentButton != (Button)sender)
             {
-                OpenChildForm(new Forms.frmDashboard(),sender);
+                this.OpenChildForm(new Forms.frmDashboard(),sender);
             }
-
 
         }
 
@@ -162,9 +156,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    pnlForms.Controls.Add(books);
             //    books.Show();
             //}
-            if(currentButton != (Button)sender)
+            if(this.currentButton != (Button)sender)
             {
-                OpenChildForm(new Forms.frmBooks(),sender);
+                this.OpenChildForm(new Forms.frmBooks(),sender);
             }
         }
 
@@ -181,9 +175,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    pnlForms.Controls.Add(authors);
             //    authors.Show();
             //}
-            if(currentButton != (Button)sender)
+            if(this.currentButton != (Button)sender)
             {
-                OpenChildForm(new Forms.frmAuthors(),sender);
+                this.OpenChildForm(new Forms.frmAuthors(),sender);
             }
         }
 
@@ -200,9 +194,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    pnlForms.Controls.Add(rentals);
             //    rentals.Show();
             //}
-            if(currentButton != (Button)sender)
+            if(this.currentButton != (Button)sender)
             {
-                OpenChildForm(new Forms.frmRentals(),sender);
+                this.OpenChildForm(new Forms.frmRentals(),sender);
             }
         }
 
@@ -219,9 +213,9 @@ namespace SeniceroDAngelo_ScreenDesign
             //    pnlForms.Controls.Add(accounts);
             //    accounts.Show();
             //}
-            if(currentButton != (Button)sender)
+            if(this.currentButton != (Button)sender)
             {
-                OpenChildForm(new Forms.frmAccounts(),sender);
+                this.OpenChildForm(new Forms.frmAccounts(),sender);
             }
         }
 
@@ -238,19 +232,19 @@ namespace SeniceroDAngelo_ScreenDesign
             //    pnlForms.Controls.Add(subjects);
             //    subjects.Show();
             //}
-            if(currentButton != (Button)sender)
+            if(this.currentButton != (Button)sender)
             {
-                OpenChildForm(new Forms.frmSubjects(),sender);
+                this.OpenChildForm(new Forms.frmSubjects(),sender);
             }
         }
 
         private void Reset()
         {
-            DisableButton();
-            lblMenuName.Text = "Dashboard";
-            pnlTitle.BackColor = Color.FromArgb(0,150,136);
-            pnlLogo.BackColor = Color.FromArgb(39,39,58);
-            currentButton = null;
+            this.DisableButton();
+            this.lblMenuName.Text = "Dashboard";
+            this.pnlTitle.BackColor = Color.FromArgb(0,150,136);
+            this.pnlLogo.BackColor = Color.FromArgb(39,39,58);
+            this.currentButton = null;
         }
 
     }

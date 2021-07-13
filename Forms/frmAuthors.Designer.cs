@@ -90,7 +90,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             this.mnuAuthors.AllowMerge = false;
             this.mnuAuthors.AutoSize = false;
-            this.mnuAuthors.BackColor = System.Drawing.Color.White;
+            this.mnuAuthors.BackColor = System.Drawing.SystemColors.Control;
             this.mnuAuthors.Dock = System.Windows.Forms.DockStyle.None;
             this.mnuAuthors.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuAuthors.GripMargin = new System.Windows.Forms.Padding(0);
