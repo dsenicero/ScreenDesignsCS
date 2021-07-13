@@ -46,5 +46,20 @@ namespace SeniceroDAngelo_ScreenDesign
             return Color.FromArgb(color.A,(byte)red,(byte)green,(byte)blue);
         }
 
+        public static Color getTextColor()
+        {
+            if(ThemeColor.SecondaryColor.R * 0.2126 + ThemeColor.SecondaryColor.G *
+                0.7152 + ThemeColor.SecondaryColor.B * 0.0722 > 255 / 2)
+            {
+                //dark color
+                return Color.Black;
+            }
+            else
+            {
+                //light color
+                return Color.White;
+            }
+        }
+
     }
 }

@@ -30,234 +30,650 @@ namespace SeniceroDAngelo_ScreenDesign
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnAccounts = new System.Windows.Forms.Button();
-            this.btnRentals = new System.Windows.Forms.Button();
-            this.btnBooks = new System.Windows.Forms.Button();
-            this.btnAuthors = new System.Windows.Forms.Button();
-            this.btnSubjects = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.lblNull1 = new System.Windows.Forms.Label();
-            this.pnlLogo = new System.Windows.Forms.Panel();
-            this.pnlTitle = new System.Windows.Forms.Panel();
-            this.pnlUser = new System.Windows.Forms.Panel();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
             this.lblMenuName = new System.Windows.Forms.Label();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.mnuMain = new System.Windows.Forms.MenuStrip();
+            this.mnuMainItemFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemFileItemExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemAccounts = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemBooks = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemRentals = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemSubjects = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemUsers = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemBooksItemAddBook = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemBooksItemAddBooksList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemSubjectsItemSubjectsList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemSubjectsItemAddSubject = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemUsersItemAddUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemUsersItemUsersList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemAccountsItemAddAccount = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemAccountsItemAccountsList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPublishers = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPublishersAddPublisher = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPublishersItemPublishersList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemRentalsItemIssueBook = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemRentalsItemReturnBook = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemRentalsItemRentalsList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPrint = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPrintItemRentals = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlForms = new System.Windows.Forms.Panel();
-            this.pnlMenu.SuspendLayout();
+            this.mnuMainItemPrintItemBooks = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPrintItemAccounts = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPrintItemUsers = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPrintItemAuthors = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPrintItemSubjects = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPrintItemPublishers = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemAccountsItemManageAccounts = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemAuthorsItemAddAuthors = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemAuthorsItemAuthorsList = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemAuthors = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemAuthorsItemManageAuthors = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemBooksItemManageBooks = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemPublishersItemManagePublishers = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemSubjectsItemManageSubjects = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMainItemUsersItemManageUsers = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.pnlTitle.SuspendLayout();
-            this.pnlUser.SuspendLayout();
+            this.pnlMenu.SuspendLayout();
+            this.mnuMain.SuspendLayout();
+            this.pnlForms.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlMenu
-            // 
-            this.pnlMenu.BackColor = System.Drawing.Color.Teal;
-            this.pnlMenu.Controls.Add(this.btnAccounts);
-            this.pnlMenu.Controls.Add(this.btnRentals);
-            this.pnlMenu.Controls.Add(this.btnBooks);
-            this.pnlMenu.Controls.Add(this.btnAuthors);
-            this.pnlMenu.Controls.Add(this.btnSubjects);
-            this.pnlMenu.Controls.Add(this.btnDashboard);
-            this.pnlMenu.Controls.Add(this.lblNull1);
-            this.pnlMenu.Controls.Add(this.pnlLogo);
-            this.pnlMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(200, 600);
-            this.pnlMenu.TabIndex = 0;
-            // 
-            // btnAccounts
-            // 
-            this.btnAccounts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAccounts.FlatAppearance.BorderSize = 0;
-            this.btnAccounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccounts.ForeColor = System.Drawing.Color.White;
-            this.btnAccounts.Image = global::SeniceroDAngelo_ScreenDesign.Properties.Resources.accounts;
-            this.btnAccounts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccounts.Location = new System.Drawing.Point(0, 400);
-            this.btnAccounts.Name = "btnAccounts";
-            this.btnAccounts.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnAccounts.Size = new System.Drawing.Size(200, 50);
-            this.btnAccounts.TabIndex = 7;
-            this.btnAccounts.Text = "Accounts";
-            this.btnAccounts.UseVisualStyleBackColor = true;
-            this.btnAccounts.Click += new System.EventHandler(this.btnAccounts_Click);
-            // 
-            // btnRentals
-            // 
-            this.btnRentals.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRentals.FlatAppearance.BorderSize = 0;
-            this.btnRentals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRentals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRentals.ForeColor = System.Drawing.Color.White;
-            this.btnRentals.Image = global::SeniceroDAngelo_ScreenDesign.Properties.Resources.rentals;
-            this.btnRentals.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRentals.Location = new System.Drawing.Point(0, 350);
-            this.btnRentals.Name = "btnRentals";
-            this.btnRentals.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnRentals.Size = new System.Drawing.Size(200, 50);
-            this.btnRentals.TabIndex = 6;
-            this.btnRentals.Text = "Rentals";
-            this.btnRentals.UseVisualStyleBackColor = true;
-            this.btnRentals.Click += new System.EventHandler(this.btnRentals_Click);
-            // 
-            // btnBooks
-            // 
-            this.btnBooks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBooks.FlatAppearance.BorderSize = 0;
-            this.btnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBooks.ForeColor = System.Drawing.Color.White;
-            this.btnBooks.Image = global::SeniceroDAngelo_ScreenDesign.Properties.Resources.books;
-            this.btnBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBooks.Location = new System.Drawing.Point(0, 300);
-            this.btnBooks.Name = "btnBooks";
-            this.btnBooks.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnBooks.Size = new System.Drawing.Size(200, 50);
-            this.btnBooks.TabIndex = 5;
-            this.btnBooks.Text = "Books";
-            this.btnBooks.UseVisualStyleBackColor = true;
-            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
-            // 
-            // btnAuthors
-            // 
-            this.btnAuthors.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAuthors.FlatAppearance.BorderSize = 0;
-            this.btnAuthors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAuthors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAuthors.ForeColor = System.Drawing.Color.White;
-            this.btnAuthors.Image = global::SeniceroDAngelo_ScreenDesign.Properties.Resources.authors;
-            this.btnAuthors.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAuthors.Location = new System.Drawing.Point(0, 250);
-            this.btnAuthors.Name = "btnAuthors";
-            this.btnAuthors.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnAuthors.Size = new System.Drawing.Size(200, 50);
-            this.btnAuthors.TabIndex = 4;
-            this.btnAuthors.Text = "Authors";
-            this.btnAuthors.UseVisualStyleBackColor = true;
-            this.btnAuthors.Click += new System.EventHandler(this.btnAuthors_Click);
-            // 
-            // btnSubjects
-            // 
-            this.btnSubjects.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubjects.FlatAppearance.BorderSize = 0;
-            this.btnSubjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubjects.ForeColor = System.Drawing.Color.White;
-            this.btnSubjects.Image = global::SeniceroDAngelo_ScreenDesign.Properties.Resources.categories;
-            this.btnSubjects.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubjects.Location = new System.Drawing.Point(0, 200);
-            this.btnSubjects.Name = "btnSubjects";
-            this.btnSubjects.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSubjects.Size = new System.Drawing.Size(200, 50);
-            this.btnSubjects.TabIndex = 3;
-            this.btnSubjects.Text = "Subjects";
-            this.btnSubjects.UseVisualStyleBackColor = true;
-            this.btnSubjects.Click += new System.EventHandler(this.btnSubjects_Click);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Image = global::SeniceroDAngelo_ScreenDesign.Properties.Resources.computer;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 150);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(200, 50);
-            this.btnDashboard.TabIndex = 2;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // lblNull1
-            // 
-            this.lblNull1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblNull1.ForeColor = System.Drawing.Color.White;
-            this.lblNull1.Location = new System.Drawing.Point(0, 100);
-            this.lblNull1.Name = "lblNull1";
-            this.lblNull1.Size = new System.Drawing.Size(200, 50);
-            this.lblNull1.TabIndex = 1;
-            this.lblNull1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlLogo
-            // 
-            this.pnlLogo.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.pnlLogo.BackgroundImage = global::SeniceroDAngelo_ScreenDesign.Properties.Resources.library;
-            this.pnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(200, 100);
-            this.pnlLogo.TabIndex = 0;
-            // 
-            // pnlTitle
-            // 
-            this.pnlTitle.BackColor = System.Drawing.Color.Teal;
-            this.pnlTitle.Controls.Add(this.pnlUser);
-            this.pnlTitle.Controls.Add(this.lblMenuName);
-            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitle.Location = new System.Drawing.Point(200, 0);
-            this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(800, 100);
-            this.pnlTitle.TabIndex = 1;
-            // 
-            // pnlUser
-            // 
-            this.pnlUser.BackColor = System.Drawing.Color.White;
-            this.pnlUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlUser.Controls.Add(this.lblUsername);
-            this.pnlUser.Controls.Add(this.lblID);
-            this.pnlUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlUser.Location = new System.Drawing.Point(514, 0);
-            this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(286, 100);
-            this.pnlUser.TabIndex = 0;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(114, 9);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(160, 25);
-            this.lblUsername.TabIndex = 2;
-            this.lblUsername.Text = "D\'Angelo Senicero";
-            // 
-            // lblID
-            // 
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(194, 34);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(80, 20);
-            this.lblID.TabIndex = 3;
-            this.lblID.Text = "1733724";
             // 
             // lblMenuName
             // 
             this.lblMenuName.AutoSize = true;
             this.lblMenuName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuName.ForeColor = System.Drawing.Color.White;
-            this.lblMenuName.Location = new System.Drawing.Point(171, 34);
+            this.lblMenuName.Location = new System.Drawing.Point(292, 12);
             this.lblMenuName.Name = "lblMenuName";
-            this.lblMenuName.Size = new System.Drawing.Size(184, 37);
+            this.lblMenuName.Size = new System.Drawing.Size(415, 37);
             this.lblMenuName.TabIndex = 4;
-            this.lblMenuName.Text = "Dashboard";
+            this.lblMenuName.Text = " Admin D\'Angelo Senicero";
+            // 
+            // pnlTitle
+            // 
+            this.pnlTitle.BackColor = System.Drawing.Color.Teal;
+            this.pnlTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTitle.Controls.Add(this.label1);
+            this.pnlTitle.Controls.Add(this.lblMenuName);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(1000, 125);
+            this.pnlTitle.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(408, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 37);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Main Menu";
+            // 
+            // pnlMenu
+            // 
+            this.pnlMenu.BackColor = System.Drawing.Color.White;
+            this.pnlMenu.Controls.Add(this.mnuMain);
+            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMenu.ForeColor = System.Drawing.Color.Black;
+            this.pnlMenu.Location = new System.Drawing.Point(0, 125);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(1000, 29);
+            this.pnlMenu.TabIndex = 2;
+            // 
+            // mnuMain
+            // 
+            this.mnuMain.BackColor = System.Drawing.Color.White;
+            this.mnuMain.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemFile,
+            this.mnuMainItemAccounts,
+            this.mnuMainItemAuthors,
+            this.mnuMainItemBooks,
+            this.mnuMainItemPublishers,
+            this.mnuMainItemRentals,
+            this.mnuMainItemSubjects,
+            this.mnuMainItemUsers,
+            this.mnuMainItemPrint});
+            this.mnuMain.Location = new System.Drawing.Point(0, 0);
+            this.mnuMain.Name = "mnuMain";
+            this.mnuMain.Size = new System.Drawing.Size(1000, 29);
+            this.mnuMain.TabIndex = 7;
+            this.mnuMain.Text = "mnuMain";
+            // 
+            // mnuMainItemFile
+            // 
+            this.mnuMainItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemFileItemExit});
+            this.mnuMainItemFile.Name = "mnuMainItemFile";
+            this.mnuMainItemFile.Size = new System.Drawing.Size(47, 25);
+            this.mnuMainItemFile.Text = "&File";
+            // 
+            // mnuMainItemFileItemExit
+            // 
+            this.mnuMainItemFileItemExit.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemFileItemExit.Name = "mnuMainItemFileItemExit";
+            this.mnuMainItemFileItemExit.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemFileItemExit.Text = "&Exit";
+            this.mnuMainItemFileItemExit.Click += new System.EventHandler(this.mnuMainItemFileItemExit_Click);
+            // 
+            // mnuMainItemAccounts
+            // 
+            this.mnuMainItemAccounts.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemAccountsItemAddAccount,
+            this.mnuMainItemAccountsItemAccountsList,
+            this.mnuMainItemAccountsItemManageAccounts});
+            this.mnuMainItemAccounts.Name = "mnuMainItemAccounts";
+            this.mnuMainItemAccounts.Size = new System.Drawing.Size(90, 25);
+            this.mnuMainItemAccounts.Text = "&Accounts";
+            // 
+            // mnuMainItemBooks
+            // 
+            this.mnuMainItemBooks.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemBooksItemAddBook,
+            this.mnuMainItemBooksItemAddBooksList,
+            this.mnuMainItemBooksItemManageBooks});
+            this.mnuMainItemBooks.Name = "mnuMainItemBooks";
+            this.mnuMainItemBooks.Size = new System.Drawing.Size(67, 25);
+            this.mnuMainItemBooks.Text = "&Books";
+            // 
+            // mnuMainItemRentals
+            // 
+            this.mnuMainItemRentals.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemRentalsItemIssueBook,
+            this.mnuMainItemRentalsItemRentalsList,
+            this.mnuMainItemRentalsItemReturnBook});
+            this.mnuMainItemRentals.Name = "mnuMainItemRentals";
+            this.mnuMainItemRentals.Size = new System.Drawing.Size(75, 25);
+            this.mnuMainItemRentals.Text = "&Rentals";
+            // 
+            // mnuMainItemSubjects
+            // 
+            this.mnuMainItemSubjects.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemSubjectsItemAddSubject,
+            this.mnuMainItemSubjectsItemSubjectsList,
+            this.mnuMainItemSubjectsItemManageSubjects});
+            this.mnuMainItemSubjects.Name = "mnuMainItemSubjects";
+            this.mnuMainItemSubjects.Size = new System.Drawing.Size(84, 25);
+            this.mnuMainItemSubjects.Text = "&Subjects";
+            // 
+            // mnuMainItemUsers
+            // 
+            this.mnuMainItemUsers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemUsersItemAddUser,
+            this.mnuMainItemUsersItemUsersList,
+            this.mnuMainItemUsersItemManageUsers});
+            this.mnuMainItemUsers.Name = "mnuMainItemUsers";
+            this.mnuMainItemUsers.Size = new System.Drawing.Size(62, 25);
+            this.mnuMainItemUsers.Text = "&Users";
+            // 
+            // mnuMainItemBooksItemAddBook
+            // 
+            this.mnuMainItemBooksItemAddBook.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemBooksItemAddBook.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemBooksItemAddBook.Name = "mnuMainItemBooksItemAddBook";
+            this.mnuMainItemBooksItemAddBook.Size = new System.Drawing.Size(188, 26);
+            this.mnuMainItemBooksItemAddBook.Text = "&Add Book";
+            // 
+            // mnuMainItemBooksItemAddBooksList
+            // 
+            this.mnuMainItemBooksItemAddBooksList.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemBooksItemAddBooksList.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemBooksItemAddBooksList.Name = "mnuMainItemBooksItemAddBooksList";
+            this.mnuMainItemBooksItemAddBooksList.Size = new System.Drawing.Size(188, 26);
+            this.mnuMainItemBooksItemAddBooksList.Text = "&Books List";
+            // 
+            // mnuMainItemSubjectsItemSubjectsList
+            // 
+            this.mnuMainItemSubjectsItemSubjectsList.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemSubjectsItemSubjectsList.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemSubjectsItemSubjectsList.Name = "mnuMainItemSubjectsItemSubjectsList";
+            this.mnuMainItemSubjectsItemSubjectsList.Size = new System.Drawing.Size(205, 26);
+            this.mnuMainItemSubjectsItemSubjectsList.Text = "&Subjects List";
+            // 
+            // mnuMainItemSubjectsItemAddSubject
+            // 
+            this.mnuMainItemSubjectsItemAddSubject.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemSubjectsItemAddSubject.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemSubjectsItemAddSubject.Name = "mnuMainItemSubjectsItemAddSubject";
+            this.mnuMainItemSubjectsItemAddSubject.Size = new System.Drawing.Size(205, 26);
+            this.mnuMainItemSubjectsItemAddSubject.Text = "&Add Subject";
+            // 
+            // mnuMainItemUsersItemAddUser
+            // 
+            this.mnuMainItemUsersItemAddUser.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemUsersItemAddUser.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemUsersItemAddUser.Name = "mnuMainItemUsersItemAddUser";
+            this.mnuMainItemUsersItemAddUser.Size = new System.Drawing.Size(183, 26);
+            this.mnuMainItemUsersItemAddUser.Text = "&Add User";
+            // 
+            // mnuMainItemUsersItemUsersList
+            // 
+            this.mnuMainItemUsersItemUsersList.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemUsersItemUsersList.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemUsersItemUsersList.Name = "mnuMainItemUsersItemUsersList";
+            this.mnuMainItemUsersItemUsersList.Size = new System.Drawing.Size(183, 26);
+            this.mnuMainItemUsersItemUsersList.Text = "&Users List";
+            // 
+            // mnuMainItemAccountsItemAddAccount
+            // 
+            this.mnuMainItemAccountsItemAddAccount.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemAccountsItemAddAccount.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemAccountsItemAddAccount.Name = "mnuMainItemAccountsItemAddAccount";
+            this.mnuMainItemAccountsItemAddAccount.Size = new System.Drawing.Size(211, 26);
+            this.mnuMainItemAccountsItemAddAccount.Text = "&Add Account";
+            this.mnuMainItemAccountsItemAddAccount.Click += new System.EventHandler(this.mnuMainItemAccountsItemAddAccount_Click);
+            // 
+            // mnuMainItemAccountsItemAccountsList
+            // 
+            this.mnuMainItemAccountsItemAccountsList.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemAccountsItemAccountsList.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemAccountsItemAccountsList.Name = "mnuMainItemAccountsItemAccountsList";
+            this.mnuMainItemAccountsItemAccountsList.Size = new System.Drawing.Size(211, 26);
+            this.mnuMainItemAccountsItemAccountsList.Text = "&Accounts List";
+            // 
+            // mnuMainItemPublishers
+            // 
+            this.mnuMainItemPublishers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemPublishersAddPublisher,
+            this.mnuMainItemPublishersItemPublishersList,
+            this.mnuMainItemPublishersItemManagePublishers});
+            this.mnuMainItemPublishers.Name = "mnuMainItemPublishers";
+            this.mnuMainItemPublishers.Size = new System.Drawing.Size(96, 25);
+            this.mnuMainItemPublishers.Text = "&Publishers";
+            // 
+            // mnuMainItemPublishersAddPublisher
+            // 
+            this.mnuMainItemPublishersAddPublisher.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPublishersAddPublisher.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemPublishersAddPublisher.Name = "mnuMainItemPublishersAddPublisher";
+            this.mnuMainItemPublishersAddPublisher.Size = new System.Drawing.Size(217, 26);
+            this.mnuMainItemPublishersAddPublisher.Text = "&Add Publisher";
+            // 
+            // mnuMainItemPublishersItemPublishersList
+            // 
+            this.mnuMainItemPublishersItemPublishersList.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPublishersItemPublishersList.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemPublishersItemPublishersList.Name = "mnuMainItemPublishersItemPublishersList";
+            this.mnuMainItemPublishersItemPublishersList.Size = new System.Drawing.Size(217, 26);
+            this.mnuMainItemPublishersItemPublishersList.Text = "&Publishers List";
+            // 
+            // mnuMainItemRentalsItemIssueBook
+            // 
+            this.mnuMainItemRentalsItemIssueBook.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemRentalsItemIssueBook.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemRentalsItemIssueBook.Name = "mnuMainItemRentalsItemIssueBook";
+            this.mnuMainItemRentalsItemIssueBook.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemRentalsItemIssueBook.Text = "&Issue Book";
+            // 
+            // mnuMainItemRentalsItemReturnBook
+            // 
+            this.mnuMainItemRentalsItemReturnBook.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemRentalsItemReturnBook.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemRentalsItemReturnBook.Name = "mnuMainItemRentalsItemReturnBook";
+            this.mnuMainItemRentalsItemReturnBook.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemRentalsItemReturnBook.Text = "&Return Book";
+            // 
+            // mnuMainItemRentalsItemRentalsList
+            // 
+            this.mnuMainItemRentalsItemRentalsList.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemRentalsItemRentalsList.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemRentalsItemRentalsList.Name = "mnuMainItemRentalsItemRentalsList";
+            this.mnuMainItemRentalsItemRentalsList.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemRentalsItemRentalsList.Text = "&Rentals List";
+            // 
+            // mnuMainItemPrint
+            // 
+            this.mnuMainItemPrint.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemPrintItemAccounts,
+            this.mnuMainItemPrintItemAuthors,
+            this.mnuMainItemPrintItemBooks,
+            this.mnuMainItemPrintItemPublishers,
+            this.mnuMainItemPrintItemRentals,
+            this.mnuMainItemPrintItemSubjects,
+            this.mnuMainItemPrintItemUsers});
+            this.mnuMainItemPrint.Name = "mnuMainItemPrint";
+            this.mnuMainItemPrint.Size = new System.Drawing.Size(118, 25);
+            this.mnuMainItemPrint.Text = "Pr&int Reports";
+            // 
+            // mnuMainItemPrintItemRentals
+            // 
+            this.mnuMainItemPrintItemRentals.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPrintItemRentals.Name = "mnuMainItemPrintItemRentals";
+            this.mnuMainItemPrintItemRentals.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemPrintItemRentals.Text = "&Rentals";
+            this.mnuMainItemPrintItemRentals.Click += new System.EventHandler(this.mnuMainItemPrintItemRentals_Click);
             // 
             // pnlForms
             // 
-            this.pnlForms.BackColor = System.Drawing.Color.White;
+            this.pnlForms.Controls.Add(this.label10);
+            this.pnlForms.Controls.Add(this.label11);
+            this.pnlForms.Controls.Add(this.label12);
+            this.pnlForms.Controls.Add(this.label13);
+            this.pnlForms.Controls.Add(this.label14);
+            this.pnlForms.Controls.Add(this.label15);
+            this.pnlForms.Controls.Add(this.label6);
+            this.pnlForms.Controls.Add(this.label7);
+            this.pnlForms.Controls.Add(this.label8);
+            this.pnlForms.Controls.Add(this.label9);
+            this.pnlForms.Controls.Add(this.label5);
+            this.pnlForms.Controls.Add(this.label4);
+            this.pnlForms.Controls.Add(this.label3);
+            this.pnlForms.Controls.Add(this.label2);
             this.pnlForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlForms.Location = new System.Drawing.Point(200, 100);
+            this.pnlForms.Location = new System.Drawing.Point(0, 154);
             this.pnlForms.Name = "pnlForms";
-            this.pnlForms.Size = new System.Drawing.Size(800, 500);
-            this.pnlForms.TabIndex = 2;
+            this.pnlForms.Size = new System.Drawing.Size(1000, 446);
+            this.pnlForms.TabIndex = 3;
+            // 
+            // mnuMainItemPrintItemBooks
+            // 
+            this.mnuMainItemPrintItemBooks.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPrintItemBooks.Name = "mnuMainItemPrintItemBooks";
+            this.mnuMainItemPrintItemBooks.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemPrintItemBooks.Text = "&Books";
+            this.mnuMainItemPrintItemBooks.Click += new System.EventHandler(this.mnuMainItemPrintItemBooks_Click);
+            // 
+            // mnuMainItemPrintItemAccounts
+            // 
+            this.mnuMainItemPrintItemAccounts.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPrintItemAccounts.Name = "mnuMainItemPrintItemAccounts";
+            this.mnuMainItemPrintItemAccounts.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemPrintItemAccounts.Text = "&Accounts";
+            this.mnuMainItemPrintItemAccounts.Click += new System.EventHandler(this.mnuMainItemPrintItemAccounts_Click);
+            // 
+            // mnuMainItemPrintItemUsers
+            // 
+            this.mnuMainItemPrintItemUsers.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPrintItemUsers.Name = "mnuMainItemPrintItemUsers";
+            this.mnuMainItemPrintItemUsers.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemPrintItemUsers.Text = "&Users";
+            this.mnuMainItemPrintItemUsers.Click += new System.EventHandler(this.mnuMainItemPrintItemUsers_Click);
+            // 
+            // mnuMainItemPrintItemAuthors
+            // 
+            this.mnuMainItemPrintItemAuthors.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPrintItemAuthors.Name = "mnuMainItemPrintItemAuthors";
+            this.mnuMainItemPrintItemAuthors.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemPrintItemAuthors.Text = "A&uthors";
+            this.mnuMainItemPrintItemAuthors.Click += new System.EventHandler(this.mnuMainItemPrintItemAuthors_Click);
+            // 
+            // mnuMainItemPrintItemSubjects
+            // 
+            this.mnuMainItemPrintItemSubjects.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPrintItemSubjects.Name = "mnuMainItemPrintItemSubjects";
+            this.mnuMainItemPrintItemSubjects.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemPrintItemSubjects.Text = "&Subjects";
+            this.mnuMainItemPrintItemSubjects.Click += new System.EventHandler(this.mnuMainItemPrintItemSubjects_Click);
+            // 
+            // mnuMainItemPrintItemPublishers
+            // 
+            this.mnuMainItemPrintItemPublishers.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPrintItemPublishers.Name = "mnuMainItemPrintItemPublishers";
+            this.mnuMainItemPrintItemPublishers.Size = new System.Drawing.Size(180, 26);
+            this.mnuMainItemPrintItemPublishers.Text = "&Publishers";
+            this.mnuMainItemPrintItemPublishers.Click += new System.EventHandler(this.mnuMainItemPrintItemPublishers_Click);
+            // 
+            // mnuMainItemAccountsItemManageAccounts
+            // 
+            this.mnuMainItemAccountsItemManageAccounts.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemAccountsItemManageAccounts.Name = "mnuMainItemAccountsItemManageAccounts";
+            this.mnuMainItemAccountsItemManageAccounts.Size = new System.Drawing.Size(211, 26);
+            this.mnuMainItemAccountsItemManageAccounts.Text = "&Manage Accounts";
+            // 
+            // mnuMainItemAuthorsItemAddAuthors
+            // 
+            this.mnuMainItemAuthorsItemAddAuthors.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemAuthorsItemAddAuthors.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemAuthorsItemAddAuthors.Name = "mnuMainItemAuthorsItemAddAuthors";
+            this.mnuMainItemAuthorsItemAddAuthors.Size = new System.Drawing.Size(201, 26);
+            this.mnuMainItemAuthorsItemAddAuthors.Text = "&Add Authors";
+            // 
+            // mnuMainItemAuthorsItemAuthorsList
+            // 
+            this.mnuMainItemAuthorsItemAuthorsList.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemAuthorsItemAuthorsList.ForeColor = System.Drawing.Color.Black;
+            this.mnuMainItemAuthorsItemAuthorsList.Name = "mnuMainItemAuthorsItemAuthorsList";
+            this.mnuMainItemAuthorsItemAuthorsList.Size = new System.Drawing.Size(201, 26);
+            this.mnuMainItemAuthorsItemAuthorsList.Text = "&Authors List";
+            // 
+            // mnuMainItemAuthors
+            // 
+            this.mnuMainItemAuthors.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuMainItemAuthorsItemAddAuthors,
+            this.mnuMainItemAuthorsItemAuthorsList,
+            this.mnuMainItemAuthorsItemManageAuthors});
+            this.mnuMainItemAuthors.Name = "mnuMainItemAuthors";
+            this.mnuMainItemAuthors.Size = new System.Drawing.Size(80, 25);
+            this.mnuMainItemAuthors.Text = "A&uthors";
+            // 
+            // mnuMainItemAuthorsItemManageAuthors
+            // 
+            this.mnuMainItemAuthorsItemManageAuthors.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemAuthorsItemManageAuthors.Name = "mnuMainItemAuthorsItemManageAuthors";
+            this.mnuMainItemAuthorsItemManageAuthors.Size = new System.Drawing.Size(201, 26);
+            this.mnuMainItemAuthorsItemManageAuthors.Text = "&Manage Authors";
+            // 
+            // mnuMainItemBooksItemManageBooks
+            // 
+            this.mnuMainItemBooksItemManageBooks.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemBooksItemManageBooks.Name = "mnuMainItemBooksItemManageBooks";
+            this.mnuMainItemBooksItemManageBooks.Size = new System.Drawing.Size(188, 26);
+            this.mnuMainItemBooksItemManageBooks.Text = "&Manage Books";
+            // 
+            // mnuMainItemPublishersItemManagePublishers
+            // 
+            this.mnuMainItemPublishersItemManagePublishers.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemPublishersItemManagePublishers.Name = "mnuMainItemPublishersItemManagePublishers";
+            this.mnuMainItemPublishersItemManagePublishers.Size = new System.Drawing.Size(217, 26);
+            this.mnuMainItemPublishersItemManagePublishers.Text = "&Manage Publishers";
+            // 
+            // mnuMainItemSubjectsItemManageSubjects
+            // 
+            this.mnuMainItemSubjectsItemManageSubjects.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemSubjectsItemManageSubjects.Name = "mnuMainItemSubjectsItemManageSubjects";
+            this.mnuMainItemSubjectsItemManageSubjects.Size = new System.Drawing.Size(205, 26);
+            this.mnuMainItemSubjectsItemManageSubjects.Text = "&Manage Subjects";
+            // 
+            // mnuMainItemUsersItemManageUsers
+            // 
+            this.mnuMainItemUsersItemManageUsers.BackColor = System.Drawing.Color.White;
+            this.mnuMainItemUsersItemManageUsers.Name = "mnuMainItemUsersItemManageUsers";
+            this.mnuMainItemUsersItemManageUsers.Size = new System.Drawing.Size(183, 26);
+            this.mnuMainItemUsersItemManageUsers.Text = "&Manage Users";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Red;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(73, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(191, 61);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Accounts";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Orange;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(294, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(191, 61);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Authors";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Moccasin;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(294, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(191, 103);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "122";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.LightCoral;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(73, 97);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(191, 103);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "10";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Khaki;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(515, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(191, 103);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "10";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.LimeGreen;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(736, 97);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(191, 103);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "122";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Green;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(736, 36);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(191, 61);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Publishers";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Gold;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(515, 36);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(191, 61);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Books";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.LightCoral;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(626, 308);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(191, 103);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "10";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Red;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(626, 247);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(191, 61);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Users";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(184, 308);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(191, 103);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "10";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Khaki;
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(405, 308);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(191, 103);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "122";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Gold;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(405, 247);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(191, 61);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Subjects";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.Blue;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(184, 247);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(191, 61);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "Rentals";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmMain
             // 
@@ -266,8 +682,8 @@ namespace SeniceroDAngelo_ScreenDesign
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.pnlForms);
-            this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.pnlMenu);
+            this.Controls.Add(this.pnlTitle);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -278,31 +694,77 @@ namespace SeniceroDAngelo_ScreenDesign
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Library Program";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.pnlMenu.ResumeLayout(false);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
-            this.pnlUser.ResumeLayout(false);
+            this.pnlMenu.ResumeLayout(false);
+            this.pnlMenu.PerformLayout();
+            this.mnuMain.ResumeLayout(false);
+            this.mnuMain.PerformLayout();
+            this.pnlForms.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlMenu;
-        private System.Windows.Forms.Panel pnlLogo;
-        private System.Windows.Forms.Label lblNull1;
-        private System.Windows.Forms.Button btnBooks;
-        private System.Windows.Forms.Button btnAuthors;
-        private System.Windows.Forms.Button btnSubjects;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnAccounts;
-        private System.Windows.Forms.Button btnRentals;
-        private System.Windows.Forms.Panel pnlTitle;
-        private System.Windows.Forms.Panel pnlUser;
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblMenuName;
+        private System.Windows.Forms.Panel pnlTitle;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlMenu;
+        private System.Windows.Forms.MenuStrip mnuMain;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemFile;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemFileItemExit;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemAccounts;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemBooks;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemRentals;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemSubjects;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemUsers;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemBooksItemAddBook;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemBooksItemAddBooksList;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemSubjectsItemAddSubject;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemSubjectsItemSubjectsList;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemUsersItemAddUser;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemUsersItemUsersList;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemAccountsItemAddAccount;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemAccountsItemAccountsList;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPublishers;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPublishersAddPublisher;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPublishersItemPublishersList;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemRentalsItemIssueBook;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemRentalsItemRentalsList;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemRentalsItemReturnBook;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPrint;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPrintItemRentals;
         private System.Windows.Forms.Panel pnlForms;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPrintItemBooks;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPrintItemAccounts;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPrintItemAuthors;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPrintItemPublishers;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPrintItemSubjects;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPrintItemUsers;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemAccountsItemManageAccounts;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemAuthors;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemAuthorsItemAddAuthors;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemAuthorsItemAuthorsList;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemAuthorsItemManageAuthors;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemBooksItemManageBooks;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemPublishersItemManagePublishers;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemSubjectsItemManageSubjects;
+        private System.Windows.Forms.ToolStripMenuItem mnuMainItemUsersItemManageUsers;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 

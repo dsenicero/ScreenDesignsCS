@@ -37,8 +37,15 @@
     </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,29 +57,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\frmAccounts.cs">
+    <Compile Include="Forms\frmAddAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAccounts.Designer.cs">
-      <DependentUpon>frmAccounts.cs</DependentUpon>
+    <Compile Include="Forms\frmAddAccount.Designer.cs">
+      <DependentUpon>frmAddAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmAuthors.cs">
+    <Compile Include="Forms\frmAddAuthor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAuthors.Designer.cs">
-      <DependentUpon>frmAuthors.cs</DependentUpon>
+    <Compile Include="Forms\frmAddAuthor.Designer.cs">
+      <DependentUpon>frmAddAuthor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmBooks.cs">
+    <Compile Include="Forms\frmAddBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmBooks.Designer.cs">
-      <DependentUpon>frmBooks.cs</DependentUpon>
+    <Compile Include="Forms\frmAddBook.Designer.cs">
+      <DependentUpon>frmAddBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmDashboard.cs">
+    <Compile Include="Forms\frmAddPublisher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmDashboard.Designer.cs">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
+    <Compile Include="Forms\frmAddPublisher.Designer.cs">
+      <DependentUpon>frmAddPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddSubject.Designer.cs">
+      <DependentUpon>frmAddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIssueRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIssueRental.Designer.cs">
+      <DependentUpon>frmIssueRental.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmLogin.cs">
       <SubType>Form</SubType>
@@ -86,32 +111,20 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmRentals.cs">
+    <Compile Include="Forms\frmPrintReports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmRentals.Designer.cs">
-      <DependentUpon>frmRentals.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmSubjects.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmSubjects.Designer.cs">
-      <DependentUpon>frmSubjects.cs</DependentUpon>
+    <Compile Include="Forms\frmPrintReports.Designer.cs">
+      <DependentUpon>frmPrintReports.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
-    <EmbeddedResource Include="Forms\frmAccounts.resx">
-      <DependentUpon>frmAccounts.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmAddAccount.resx">
+      <DependentUpon>frmAddAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmAuthors.resx">
-      <DependentUpon>frmAuthors.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmBooks.resx">
-      <DependentUpon>frmBooks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmDashboard.resx">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmAddBook.resx">
+      <DependentUpon>frmAddBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -119,11 +132,8 @@
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmRentals.resx">
-      <DependentUpon>frmRentals.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSubjects.resx">
-      <DependentUpon>frmSubjects.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmPrintReports.resx">
+      <DependentUpon>frmPrintReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
