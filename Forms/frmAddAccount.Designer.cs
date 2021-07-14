@@ -66,7 +66,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.lblMenuName.AutoSize = true;
             this.lblMenuName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuName.ForeColor = System.Drawing.Color.White;
-            this.lblMenuName.Location = new System.Drawing.Point(32, 12);
+            this.lblMenuName.Location = new System.Drawing.Point(19, 12);
             this.lblMenuName.Name = "lblMenuName";
             this.lblMenuName.Size = new System.Drawing.Size(415, 37);
             this.lblMenuName.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(148, 73);
+            this.label1.Location = new System.Drawing.Point(135, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 37);
             this.label1.TabIndex = 1;
@@ -93,7 +93,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(480, 125);
+            this.pnlTitle.Size = new System.Drawing.Size(454, 125);
             this.pnlTitle.TabIndex = 0;
             // 
             // fileToolStripMenuItem
@@ -119,14 +119,14 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.fileToolStripMenuItem});
             this.mnuMain.Location = new System.Drawing.Point(0, 125);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(480, 29);
+            this.mnuMain.Size = new System.Drawing.Size(454, 29);
             this.mnuMain.TabIndex = 1;
             this.mnuMain.Text = "mnuMain";
             // 
             // lblUserID
             // 
             this.lblUserID.AutoSize = true;
-            this.lblUserID.Location = new System.Drawing.Point(29, 64);
+            this.lblUserID.Location = new System.Drawing.Point(16, 58);
             this.lblUserID.Name = "lblUserID";
             this.lblUserID.Size = new System.Drawing.Size(71, 24);
             this.lblUserID.TabIndex = 2;
@@ -135,7 +135,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // lblSecurityQuestion
             // 
             this.lblSecurityQuestion.AutoSize = true;
-            this.lblSecurityQuestion.Location = new System.Drawing.Point(29, 214);
+            this.lblSecurityQuestion.Location = new System.Drawing.Point(16, 208);
             this.lblSecurityQuestion.Name = "lblSecurityQuestion";
             this.lblSecurityQuestion.Size = new System.Drawing.Size(158, 24);
             this.lblSecurityQuestion.TabIndex = 10;
@@ -144,7 +144,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(29, 138);
+            this.lblPassword.Location = new System.Drawing.Point(16, 132);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(92, 24);
             this.lblPassword.TabIndex = 6;
@@ -153,7 +153,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(29, 101);
+            this.lblUsername.Location = new System.Drawing.Point(16, 95);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(97, 24);
             this.lblUsername.TabIndex = 4;
@@ -162,7 +162,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // lblSecurityPassword
             // 
             this.lblSecurityPassword.AutoSize = true;
-            this.lblSecurityPassword.Location = new System.Drawing.Point(29, 252);
+            this.lblSecurityPassword.Location = new System.Drawing.Point(16, 246);
             this.lblSecurityPassword.Name = "lblSecurityPassword";
             this.lblSecurityPassword.Size = new System.Drawing.Size(146, 24);
             this.lblSecurityPassword.TabIndex = 12;
@@ -170,28 +170,29 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             // tbxUserID
             // 
-            this.tbxUserID.Location = new System.Drawing.Point(214, 62);
+            this.tbxUserID.Location = new System.Drawing.Point(201, 56);
             this.tbxUserID.Name = "tbxUserID";
             this.tbxUserID.Size = new System.Drawing.Size(237, 29);
             this.tbxUserID.TabIndex = 3;
             // 
             // tbxUsername
             // 
-            this.tbxUsername.Location = new System.Drawing.Point(214, 99);
+            this.tbxUsername.Location = new System.Drawing.Point(201, 93);
             this.tbxUsername.Name = "tbxUsername";
             this.tbxUsername.Size = new System.Drawing.Size(237, 29);
             this.tbxUsername.TabIndex = 5;
             // 
             // tbxPassword
             // 
-            this.tbxPassword.Location = new System.Drawing.Point(214, 136);
+            this.tbxPassword.Location = new System.Drawing.Point(201, 130);
             this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '*';
             this.tbxPassword.Size = new System.Drawing.Size(237, 29);
             this.tbxPassword.TabIndex = 7;
             // 
             // tbxSecurityAnswer
             // 
-            this.tbxSecurityAnswer.Location = new System.Drawing.Point(214, 250);
+            this.tbxSecurityAnswer.Location = new System.Drawing.Point(201, 244);
             this.tbxSecurityAnswer.Name = "tbxSecurityAnswer";
             this.tbxSecurityAnswer.Size = new System.Drawing.Size(237, 29);
             this.tbxSecurityAnswer.TabIndex = 13;
@@ -199,7 +200,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // lblAccountID
             // 
             this.lblAccountID.AutoSize = true;
-            this.lblAccountID.Location = new System.Drawing.Point(29, 27);
+            this.lblAccountID.Location = new System.Drawing.Point(16, 21);
             this.lblAccountID.Name = "lblAccountID";
             this.lblAccountID.Size = new System.Drawing.Size(102, 24);
             this.lblAccountID.TabIndex = 0;
@@ -207,7 +208,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             // tbxAccountID
             // 
-            this.tbxAccountID.Location = new System.Drawing.Point(214, 25);
+            this.tbxAccountID.Location = new System.Drawing.Point(201, 19);
             this.tbxAccountID.Name = "tbxAccountID";
             this.tbxAccountID.Size = new System.Drawing.Size(237, 29);
             this.tbxAccountID.TabIndex = 1;
@@ -215,7 +216,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // lblConfirmPassword
             // 
             this.lblConfirmPassword.AutoSize = true;
-            this.lblConfirmPassword.Location = new System.Drawing.Point(29, 175);
+            this.lblConfirmPassword.Location = new System.Drawing.Point(16, 169);
             this.lblConfirmPassword.Name = "lblConfirmPassword";
             this.lblConfirmPassword.Size = new System.Drawing.Size(162, 24);
             this.lblConfirmPassword.TabIndex = 8;
@@ -223,8 +224,9 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             // tbxConfirmPassword
             // 
-            this.tbxConfirmPassword.Location = new System.Drawing.Point(214, 173);
+            this.tbxConfirmPassword.Location = new System.Drawing.Point(201, 167);
             this.tbxConfirmPassword.Name = "tbxConfirmPassword";
+            this.tbxConfirmPassword.PasswordChar = '*';
             this.tbxConfirmPassword.Size = new System.Drawing.Size(237, 29);
             this.tbxConfirmPassword.TabIndex = 9;
             // 
@@ -232,7 +234,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             this.cbxComboBoxSecurityQuestion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxComboBoxSecurityQuestion.FormattingEnabled = true;
-            this.cbxComboBoxSecurityQuestion.Location = new System.Drawing.Point(214, 210);
+            this.cbxComboBoxSecurityQuestion.Location = new System.Drawing.Point(201, 204);
             this.cbxComboBoxSecurityQuestion.Name = "cbxComboBoxSecurityQuestion";
             this.cbxComboBoxSecurityQuestion.Size = new System.Drawing.Size(237, 32);
             this.cbxComboBoxSecurityQuestion.TabIndex = 11;
@@ -241,7 +243,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(29, 285);
+            this.checkBox1.Location = new System.Drawing.Point(16, 279);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(210, 28);
             this.checkBox1.TabIndex = 14;
@@ -251,7 +253,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(84, 328);
+            this.btnAdd.Location = new System.Drawing.Point(71, 322);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 35);
             this.btnAdd.TabIndex = 15;
@@ -260,7 +262,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(190, 328);
+            this.btnClear.Location = new System.Drawing.Point(177, 322);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(100, 35);
             this.btnClear.TabIndex = 16;
@@ -269,7 +271,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(296, 328);
+            this.btnCancel.Location = new System.Drawing.Point(283, 322);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 35);
             this.btnCancel.TabIndex = 17;
@@ -303,7 +305,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.pnlForms.ForeColor = System.Drawing.Color.Black;
             this.pnlForms.Location = new System.Drawing.Point(0, 154);
             this.pnlForms.Name = "pnlForms";
-            this.pnlForms.Size = new System.Drawing.Size(480, 389);
+            this.pnlForms.Size = new System.Drawing.Size(454, 377);
             this.pnlForms.TabIndex = 2;
             this.pnlForms.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlForms_Paint);
             // 
@@ -311,7 +313,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 543);
+            this.ClientSize = new System.Drawing.Size(454, 531);
             this.Controls.Add(this.pnlForms);
             this.Controls.Add(this.mnuMain);
             this.Controls.Add(this.pnlTitle);

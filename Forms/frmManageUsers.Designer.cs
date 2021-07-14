@@ -1,7 +1,7 @@
 ﻿
 namespace SeniceroDAngelo_ScreenDesign.Forms
 {
-    partial class frmPrintReports
+    partial class frmManageUsers
     {
         /// <summary>
         /// Required designer variable.
@@ -29,30 +29,40 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrintReports));
-            this.crvViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.pnlForms = new System.Windows.Forms.Panel();
+            this.dgvUsers = new System.Windows.Forms.DataGridView();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlTitle = new System.Windows.Forms.Panel();
-            this.lblPrintReport = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblMenuName = new System.Windows.Forms.Label();
-            this.pnlForms = new System.Windows.Forms.Panel();
+            this.pnlForms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.mnuMain.SuspendLayout();
             this.pnlTitle.SuspendLayout();
-            this.pnlForms.SuspendLayout();
             this.SuspendLayout();
             // 
-            // crvViewer
+            // pnlForms
             // 
-            this.crvViewer.ActiveViewIndex = -1;
-            this.crvViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crvViewer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crvViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crvViewer.Location = new System.Drawing.Point(0, 0);
-            this.crvViewer.Name = "crvViewer";
-            this.crvViewer.Size = new System.Drawing.Size(784, 257);
-            this.crvViewer.TabIndex = 0;
+            this.pnlForms.BackColor = System.Drawing.Color.White;
+            this.pnlForms.Controls.Add(this.dgvUsers);
+            this.pnlForms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlForms.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlForms.ForeColor = System.Drawing.Color.Black;
+            this.pnlForms.Location = new System.Drawing.Point(0, 154);
+            this.pnlForms.Name = "pnlForms";
+            this.pnlForms.Size = new System.Drawing.Size(800, 296);
+            this.pnlForms.TabIndex = 8;
+            // 
+            // dgvUsers
+            // 
+            this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvUsers.Location = new System.Drawing.Point(0, 0);
+            this.dgvUsers.Name = "dgvUsers";
+            this.dgvUsers.Size = new System.Drawing.Size(800, 296);
+            this.dgvUsers.TabIndex = 0;
             // 
             // mnuMain
             // 
@@ -62,8 +72,8 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.fileToolStripMenuItem});
             this.mnuMain.Location = new System.Drawing.Point(0, 125);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(784, 29);
-            this.mnuMain.TabIndex = 9;
+            this.mnuMain.Size = new System.Drawing.Size(800, 29);
+            this.mnuMain.TabIndex = 7;
             this.mnuMain.Text = "mnuMain";
             // 
             // fileToolStripMenuItem
@@ -85,25 +95,25 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             this.pnlTitle.BackColor = System.Drawing.Color.Teal;
             this.pnlTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTitle.Controls.Add(this.lblPrintReport);
+            this.pnlTitle.Controls.Add(this.label1);
             this.pnlTitle.Controls.Add(this.lblMenuName);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(784, 125);
-            this.pnlTitle.TabIndex = 8;
+            this.pnlTitle.Size = new System.Drawing.Size(800, 125);
+            this.pnlTitle.TabIndex = 6;
             // 
-            // lblPrintReport
+            // label1
             // 
-            this.lblPrintReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblPrintReport.AutoSize = true;
-            this.lblPrintReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrintReport.ForeColor = System.Drawing.Color.White;
-            this.lblPrintReport.Location = new System.Drawing.Point(292, 73);
-            this.lblPrintReport.Name = "lblPrintReport";
-            this.lblPrintReport.Size = new System.Drawing.Size(199, 37);
-            this.lblPrintReport.TabIndex = 1;
-            this.lblPrintReport.Text = "Print Report";
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(223, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(353, 37);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Manage Accounts List";
             // 
             // lblMenuName
             // 
@@ -111,38 +121,28 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.lblMenuName.AutoSize = true;
             this.lblMenuName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuName.ForeColor = System.Drawing.Color.White;
-            this.lblMenuName.Location = new System.Drawing.Point(184, 12);
+            this.lblMenuName.Location = new System.Drawing.Point(192, 12);
             this.lblMenuName.Name = "lblMenuName";
             this.lblMenuName.Size = new System.Drawing.Size(415, 37);
             this.lblMenuName.TabIndex = 0;
             this.lblMenuName.Text = " Admin D\'Angelo Senicero";
             // 
-            // pnlForms
-            // 
-            this.pnlForms.Controls.Add(this.crvViewer);
-            this.pnlForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlForms.Location = new System.Drawing.Point(0, 154);
-            this.pnlForms.Name = "pnlForms";
-            this.pnlForms.Size = new System.Drawing.Size(784, 257);
-            this.pnlForms.TabIndex = 10;
-            // 
-            // frmPrintReports
+            // frmManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 411);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pnlForms);
             this.Controls.Add(this.mnuMain);
             this.Controls.Add(this.pnlTitle);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(700, 450);
-            this.Name = "frmPrintReports";
-            this.Text = "My Library Program - Print Report Name of Specific Report";
+            this.Name = "frmManageUsers";
+            this.Text = "frmManageUsers";
+            this.pnlForms.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
-            this.pnlForms.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,13 +150,13 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
 
         #endregion
 
-        public CrystalDecisions.Windows.Forms.CrystalReportViewer crvViewer;
+        private System.Windows.Forms.Panel pnlForms;
+        private System.Windows.Forms.DataGridView dgvUsers;
         private System.Windows.Forms.MenuStrip mnuMain;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.Panel pnlTitle;
-        private System.Windows.Forms.Label lblPrintReport;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMenuName;
-        private System.Windows.Forms.Panel pnlForms;
     }
 }

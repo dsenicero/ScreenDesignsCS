@@ -40,31 +40,30 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblMenuName = new System.Windows.Forms.Label();
-            this.tbxISBN = new System.Windows.Forms.MaskedTextBox();
-            this.btnXAuthor2 = new System.Windows.Forms.Button();
-            this.btnXAuthor1 = new System.Windows.Forms.Button();
-            this.cbxAuthor2 = new System.Windows.Forms.ComboBox();
-            this.lblAuthor2 = new System.Windows.Forms.Label();
-            this.cbxAuthor1 = new System.Windows.Forms.ComboBox();
-            this.lblAuthor1 = new System.Windows.Forms.Label();
-            this.cbxPublisher = new System.Windows.Forms.ComboBox();
-            this.lblPublisher = new System.Windows.Forms.Label();
-            this.lblLanguage = new System.Windows.Forms.Label();
-            this.lblPublishedDate = new System.Windows.Forms.Label();
-            this.lblCategory = new System.Windows.Forms.Label();
-            this.tbxDescription = new System.Windows.Forms.TextBox();
-            this.lblSummary = new System.Windows.Forms.Label();
-            this.lblISBN = new System.Windows.Forms.Label();
-            this.tbxYear = new System.Windows.Forms.TextBox();
-            this.lblYearPub = new System.Windows.Forms.Label();
-            this.tbxTitle = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.cbxComboBoxCategory = new System.Windows.Forms.ComboBox();
-            this.cbxComboBoxLanguage = new System.Windows.Forms.ComboBox();
-            this.lblComments = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxTitle = new System.Windows.Forms.TextBox();
+            this.lblISBN = new System.Windows.Forms.Label();
+            this.lblSummary = new System.Windows.Forms.Label();
+            this.tbxDescription = new System.Windows.Forms.TextBox();
+            this.lblCategory = new System.Windows.Forms.Label();
+            this.lblPublishedDate = new System.Windows.Forms.Label();
+            this.lblLanguage = new System.Windows.Forms.Label();
             this.tbxReplacementPrice = new System.Windows.Forms.TextBox();
+            this.lblPublisher = new System.Windows.Forms.Label();
+            this.cbxComboBoxPublisher = new System.Windows.Forms.ComboBox();
+            this.lblAuthor1 = new System.Windows.Forms.Label();
+            this.cbxComboBoxAuthor1 = new System.Windows.Forms.ComboBox();
+            this.lblAuthor2 = new System.Windows.Forms.Label();
+            this.cbxComboBoxAuthor2 = new System.Windows.Forms.ComboBox();
+            this.tbxISBN = new System.Windows.Forms.MaskedTextBox();
+            this.cbxComboBoxCategory = new System.Windows.Forms.ComboBox();
+            this.cbxComboBoxPublishedDate = new System.Windows.Forms.ComboBox();
+            this.tbxLanguage = new System.Windows.Forms.TextBox();
             this.lblReplacementPrice = new System.Windows.Forms.Label();
+            this.lblNumOfPages = new System.Windows.Forms.Label();
+            this.tbxNumOfPages = new System.Windows.Forms.TextBox();
+            this.tbxComments = new System.Windows.Forms.TextBox();
+            this.lblComments = new System.Windows.Forms.Label();
             this.pnlForms.SuspendLayout();
             this.mnuMain.SuspendLayout();
             this.pnlTitle.SuspendLayout();
@@ -73,19 +72,20 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // pnlForms
             // 
             this.pnlForms.BackColor = System.Drawing.Color.White;
-            this.pnlForms.Controls.Add(this.lblReplacementPrice);
-            this.pnlForms.Controls.Add(this.textBox1);
+            this.pnlForms.Controls.Add(this.tbxComments);
             this.pnlForms.Controls.Add(this.lblComments);
-            this.pnlForms.Controls.Add(this.cbxComboBoxLanguage);
+            this.pnlForms.Controls.Add(this.lblNumOfPages);
+            this.pnlForms.Controls.Add(this.tbxNumOfPages);
+            this.pnlForms.Controls.Add(this.lblReplacementPrice);
+            this.pnlForms.Controls.Add(this.tbxLanguage);
+            this.pnlForms.Controls.Add(this.cbxComboBoxPublishedDate);
             this.pnlForms.Controls.Add(this.cbxComboBoxCategory);
             this.pnlForms.Controls.Add(this.tbxISBN);
-            this.pnlForms.Controls.Add(this.btnXAuthor2);
-            this.pnlForms.Controls.Add(this.btnXAuthor1);
-            this.pnlForms.Controls.Add(this.cbxAuthor2);
+            this.pnlForms.Controls.Add(this.cbxComboBoxAuthor2);
             this.pnlForms.Controls.Add(this.lblAuthor2);
-            this.pnlForms.Controls.Add(this.cbxAuthor1);
+            this.pnlForms.Controls.Add(this.cbxComboBoxAuthor1);
             this.pnlForms.Controls.Add(this.lblAuthor1);
-            this.pnlForms.Controls.Add(this.cbxPublisher);
+            this.pnlForms.Controls.Add(this.cbxComboBoxPublisher);
             this.pnlForms.Controls.Add(this.lblPublisher);
             this.pnlForms.Controls.Add(this.tbxReplacementPrice);
             this.pnlForms.Controls.Add(this.lblLanguage);
@@ -94,8 +94,6 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.pnlForms.Controls.Add(this.tbxDescription);
             this.pnlForms.Controls.Add(this.lblSummary);
             this.pnlForms.Controls.Add(this.lblISBN);
-            this.pnlForms.Controls.Add(this.tbxYear);
-            this.pnlForms.Controls.Add(this.lblYearPub);
             this.pnlForms.Controls.Add(this.tbxTitle);
             this.pnlForms.Controls.Add(this.lblTitle);
             this.pnlForms.Controls.Add(this.btnCancel);
@@ -106,12 +104,12 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.pnlForms.ForeColor = System.Drawing.Color.Black;
             this.pnlForms.Location = new System.Drawing.Point(0, 154);
             this.pnlForms.Name = "pnlForms";
-            this.pnlForms.Size = new System.Drawing.Size(665, 449);
+            this.pnlForms.Size = new System.Drawing.Size(486, 563);
             this.pnlForms.TabIndex = 2;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(350, 363);
+            this.btnCancel.Location = new System.Drawing.Point(298, 507);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 35);
             this.btnCancel.TabIndex = 19;
@@ -120,7 +118,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(244, 363);
+            this.btnClear.Location = new System.Drawing.Point(192, 507);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(100, 35);
             this.btnClear.TabIndex = 18;
@@ -129,7 +127,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(138, 363);
+            this.btnAdd.Location = new System.Drawing.Point(86, 507);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 35);
             this.btnAdd.TabIndex = 17;
@@ -144,7 +142,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.fileToolStripMenuItem});
             this.mnuMain.Location = new System.Drawing.Point(0, 125);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(665, 29);
+            this.mnuMain.Size = new System.Drawing.Size(486, 29);
             this.mnuMain.TabIndex = 1;
             this.mnuMain.Text = "mnuMain";
             // 
@@ -172,7 +170,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(665, 125);
+            this.pnlTitle.Size = new System.Drawing.Size(486, 125);
             this.pnlTitle.TabIndex = 0;
             // 
             // label1
@@ -181,7 +179,7 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(240, 73);
+            this.label1.Location = new System.Drawing.Point(151, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 37);
             this.label1.TabIndex = 1;
@@ -194,175 +192,20 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.lblMenuName.AutoSize = true;
             this.lblMenuName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuName.ForeColor = System.Drawing.Color.White;
-            this.lblMenuName.Location = new System.Drawing.Point(124, 12);
+            this.lblMenuName.Location = new System.Drawing.Point(35, 12);
             this.lblMenuName.Name = "lblMenuName";
             this.lblMenuName.Size = new System.Drawing.Size(415, 37);
             this.lblMenuName.TabIndex = 0;
             this.lblMenuName.Text = " Admin D\'Angelo Senicero";
             // 
-            // tbxISBN
+            // lblTitle
             // 
-            this.tbxISBN.Location = new System.Drawing.Point(433, 63);
-            this.tbxISBN.Mask = ">A-AAAAAAA-A-A";
-            this.tbxISBN.Name = "tbxISBN";
-            this.tbxISBN.Size = new System.Drawing.Size(200, 29);
-            this.tbxISBN.TabIndex = 5;
-            // 
-            // btnXAuthor2
-            // 
-            this.btnXAuthor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXAuthor2.Location = new System.Drawing.Point(612, 98);
-            this.btnXAuthor2.Name = "btnXAuthor2";
-            this.btnXAuthor2.Size = new System.Drawing.Size(21, 32);
-            this.btnXAuthor2.TabIndex = 114;
-            this.btnXAuthor2.TabStop = false;
-            this.btnXAuthor2.Text = "X";
-            this.btnXAuthor2.UseVisualStyleBackColor = true;
-            // 
-            // btnXAuthor1
-            // 
-            this.btnXAuthor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXAuthor1.Location = new System.Drawing.Point(346, 98);
-            this.btnXAuthor1.Name = "btnXAuthor1";
-            this.btnXAuthor1.Size = new System.Drawing.Size(21, 32);
-            this.btnXAuthor1.TabIndex = 113;
-            this.btnXAuthor1.TabStop = false;
-            this.btnXAuthor1.Text = "X";
-            this.btnXAuthor1.UseVisualStyleBackColor = true;
-            // 
-            // cbxAuthor2
-            // 
-            this.cbxAuthor2.BackColor = System.Drawing.Color.White;
-            this.cbxAuthor2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxAuthor2.FormattingEnabled = true;
-            this.cbxAuthor2.Location = new System.Drawing.Point(433, 98);
-            this.cbxAuthor2.Name = "cbxAuthor2";
-            this.cbxAuthor2.Size = new System.Drawing.Size(173, 32);
-            this.cbxAuthor2.TabIndex = 96;
-            // 
-            // lblAuthor2
-            // 
-            this.lblAuthor2.AutoSize = true;
-            this.lblAuthor2.Location = new System.Drawing.Point(346, 102);
-            this.lblAuthor2.Name = "lblAuthor2";
-            this.lblAuthor2.Size = new System.Drawing.Size(81, 24);
-            this.lblAuthor2.TabIndex = 110;
-            this.lblAuthor2.Text = "Author 2";
-            // 
-            // cbxAuthor1
-            // 
-            this.cbxAuthor1.BackColor = System.Drawing.Color.White;
-            this.cbxAuthor1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxAuthor1.FormattingEnabled = true;
-            this.cbxAuthor1.Items.AddRange(new object[] {
-            "Darth Vader",
-            "Jon Stark",
-            "String Collection"});
-            this.cbxAuthor1.Location = new System.Drawing.Point(205, 98);
-            this.cbxAuthor1.Name = "cbxAuthor1";
-            this.cbxAuthor1.Size = new System.Drawing.Size(135, 32);
-            this.cbxAuthor1.TabIndex = 94;
-            // 
-            // lblAuthor1
-            // 
-            this.lblAuthor1.AutoSize = true;
-            this.lblAuthor1.Location = new System.Drawing.Point(33, 101);
-            this.lblAuthor1.Name = "lblAuthor1";
-            this.lblAuthor1.Size = new System.Drawing.Size(81, 24);
-            this.lblAuthor1.TabIndex = 109;
-            this.lblAuthor1.Text = "Author 1";
-            // 
-            // cbxPublisher
-            // 
-            this.cbxPublisher.BackColor = System.Drawing.Color.White;
-            this.cbxPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxPublisher.FormattingEnabled = true;
-            this.cbxPublisher.Location = new System.Drawing.Point(205, 136);
-            this.cbxPublisher.Name = "cbxPublisher";
-            this.cbxPublisher.Size = new System.Drawing.Size(353, 32);
-            this.cbxPublisher.TabIndex = 99;
-            // 
-            // lblPublisher
-            // 
-            this.lblPublisher.AutoSize = true;
-            this.lblPublisher.Location = new System.Drawing.Point(33, 140);
-            this.lblPublisher.Name = "lblPublisher";
-            this.lblPublisher.Size = new System.Drawing.Size(89, 24);
-            this.lblPublisher.TabIndex = 108;
-            this.lblPublisher.Text = "Publisher";
-            // 
-            // lblLanguage
-            // 
-            this.lblLanguage.AutoSize = true;
-            this.lblLanguage.Location = new System.Drawing.Point(33, 245);
-            this.lblLanguage.Name = "lblLanguage";
-            this.lblLanguage.Size = new System.Drawing.Size(101, 24);
-            this.lblLanguage.TabIndex = 107;
-            this.lblLanguage.Text = "Comments";
-            // 
-            // lblPublishedDate
-            // 
-            this.lblPublishedDate.AutoSize = true;
-            this.lblPublishedDate.Location = new System.Drawing.Point(33, 219);
-            this.lblPublishedDate.Name = "lblPublishedDate";
-            this.lblPublishedDate.Size = new System.Drawing.Size(137, 24);
-            this.lblPublishedDate.TabIndex = 106;
-            this.lblPublishedDate.Text = "Published Date";
-            // 
-            // lblCategory
-            // 
-            this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(33, 193);
-            this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(85, 24);
-            this.lblCategory.TabIndex = 105;
-            this.lblCategory.Text = "Category";
-            // 
-            // tbxDescription
-            // 
-            this.tbxDescription.BackColor = System.Drawing.Color.White;
-            this.tbxDescription.Location = new System.Drawing.Point(205, 174);
-            this.tbxDescription.Name = "tbxDescription";
-            this.tbxDescription.ReadOnly = true;
-            this.tbxDescription.Size = new System.Drawing.Size(353, 29);
-            this.tbxDescription.TabIndex = 100;
-            // 
-            // lblSummary
-            // 
-            this.lblSummary.AutoSize = true;
-            this.lblSummary.Location = new System.Drawing.Point(33, 167);
-            this.lblSummary.Name = "lblSummary";
-            this.lblSummary.Size = new System.Drawing.Size(90, 24);
-            this.lblSummary.TabIndex = 104;
-            this.lblSummary.Text = "Summary";
-            // 
-            // lblISBN
-            // 
-            this.lblISBN.AutoSize = true;
-            this.lblISBN.Location = new System.Drawing.Point(375, 65);
-            this.lblISBN.Name = "lblISBN";
-            this.lblISBN.Size = new System.Drawing.Size(52, 24);
-            this.lblISBN.TabIndex = 4;
-            this.lblISBN.Text = "ISBN";
-            // 
-            // tbxYear
-            // 
-            this.tbxYear.BackColor = System.Drawing.Color.White;
-            this.tbxYear.Location = new System.Drawing.Point(205, 65);
-            this.tbxYear.MaxLength = 4;
-            this.tbxYear.Name = "tbxYear";
-            this.tbxYear.ReadOnly = true;
-            this.tbxYear.Size = new System.Drawing.Size(105, 29);
-            this.tbxYear.TabIndex = 3;
-            // 
-            // lblYearPub
-            // 
-            this.lblYearPub.AutoSize = true;
-            this.lblYearPub.Location = new System.Drawing.Point(33, 68);
-            this.lblYearPub.Name = "lblYearPub";
-            this.lblYearPub.Size = new System.Drawing.Size(138, 24);
-            this.lblYearPub.TabIndex = 2;
-            this.lblYearPub.Text = "Year Published";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(31, 30);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(45, 24);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Title";
             // 
             // tbxTitle
             // 
@@ -370,79 +213,220 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
             this.tbxTitle.Location = new System.Drawing.Point(205, 28);
             this.tbxTitle.Name = "tbxTitle";
             this.tbxTitle.ReadOnly = true;
-            this.tbxTitle.Size = new System.Drawing.Size(353, 29);
+            this.tbxTitle.Size = new System.Drawing.Size(248, 29);
             this.tbxTitle.TabIndex = 1;
             // 
-            // lblTitle
+            // lblISBN
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(33, 33);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(45, 24);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Title";
+            this.lblISBN.AutoSize = true;
+            this.lblISBN.Location = new System.Drawing.Point(31, 67);
+            this.lblISBN.Name = "lblISBN";
+            this.lblISBN.Size = new System.Drawing.Size(52, 24);
+            this.lblISBN.TabIndex = 4;
+            this.lblISBN.Text = "ISBN";
+            // 
+            // lblSummary
+            // 
+            this.lblSummary.AutoSize = true;
+            this.lblSummary.Location = new System.Drawing.Point(31, 264);
+            this.lblSummary.Name = "lblSummary";
+            this.lblSummary.Size = new System.Drawing.Size(90, 24);
+            this.lblSummary.TabIndex = 104;
+            this.lblSummary.Text = "Summary";
+            // 
+            // tbxDescription
+            // 
+            this.tbxDescription.BackColor = System.Drawing.Color.White;
+            this.tbxDescription.Location = new System.Drawing.Point(205, 262);
+            this.tbxDescription.Name = "tbxDescription";
+            this.tbxDescription.ReadOnly = true;
+            this.tbxDescription.Size = new System.Drawing.Size(248, 29);
+            this.tbxDescription.TabIndex = 100;
+            // 
+            // lblCategory
+            // 
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.Location = new System.Drawing.Point(31, 303);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(85, 24);
+            this.lblCategory.TabIndex = 105;
+            this.lblCategory.Text = "Category";
+            // 
+            // lblPublishedDate
+            // 
+            this.lblPublishedDate.AutoSize = true;
+            this.lblPublishedDate.Location = new System.Drawing.Point(31, 226);
+            this.lblPublishedDate.Name = "lblPublishedDate";
+            this.lblPublishedDate.Size = new System.Drawing.Size(137, 24);
+            this.lblPublishedDate.TabIndex = 106;
+            this.lblPublishedDate.Text = "Published Date";
+            // 
+            // lblLanguage
+            // 
+            this.lblLanguage.AutoSize = true;
+            this.lblLanguage.Location = new System.Drawing.Point(31, 415);
+            this.lblLanguage.Name = "lblLanguage";
+            this.lblLanguage.Size = new System.Drawing.Size(95, 24);
+            this.lblLanguage.TabIndex = 107;
+            this.lblLanguage.Text = "Language";
+            // 
+            // tbxReplacementPrice
+            // 
+            this.tbxReplacementPrice.BackColor = System.Drawing.Color.White;
+            this.tbxReplacementPrice.Location = new System.Drawing.Point(205, 339);
+            this.tbxReplacementPrice.Name = "tbxReplacementPrice";
+            this.tbxReplacementPrice.ReadOnly = true;
+            this.tbxReplacementPrice.Size = new System.Drawing.Size(248, 29);
+            this.tbxReplacementPrice.TabIndex = 103;
+            // 
+            // lblPublisher
+            // 
+            this.lblPublisher.AutoSize = true;
+            this.lblPublisher.Location = new System.Drawing.Point(31, 186);
+            this.lblPublisher.Name = "lblPublisher";
+            this.lblPublisher.Size = new System.Drawing.Size(89, 24);
+            this.lblPublisher.TabIndex = 108;
+            this.lblPublisher.Text = "Publisher";
+            // 
+            // cbxComboBoxPublisher
+            // 
+            this.cbxComboBoxPublisher.BackColor = System.Drawing.Color.White;
+            this.cbxComboBoxPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxComboBoxPublisher.FormattingEnabled = true;
+            this.cbxComboBoxPublisher.Location = new System.Drawing.Point(205, 182);
+            this.cbxComboBoxPublisher.Name = "cbxComboBoxPublisher";
+            this.cbxComboBoxPublisher.Size = new System.Drawing.Size(248, 32);
+            this.cbxComboBoxPublisher.TabIndex = 99;
+            // 
+            // lblAuthor1
+            // 
+            this.lblAuthor1.AutoSize = true;
+            this.lblAuthor1.Location = new System.Drawing.Point(31, 106);
+            this.lblAuthor1.Name = "lblAuthor1";
+            this.lblAuthor1.Size = new System.Drawing.Size(81, 24);
+            this.lblAuthor1.TabIndex = 109;
+            this.lblAuthor1.Text = "Author 1";
+            // 
+            // cbxComboBoxAuthor1
+            // 
+            this.cbxComboBoxAuthor1.BackColor = System.Drawing.Color.White;
+            this.cbxComboBoxAuthor1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxComboBoxAuthor1.FormattingEnabled = true;
+            this.cbxComboBoxAuthor1.Items.AddRange(new object[] {
+            "Darth Vader",
+            "Jon Stark",
+            "String Collection"});
+            this.cbxComboBoxAuthor1.Location = new System.Drawing.Point(205, 102);
+            this.cbxComboBoxAuthor1.Name = "cbxComboBoxAuthor1";
+            this.cbxComboBoxAuthor1.Size = new System.Drawing.Size(248, 32);
+            this.cbxComboBoxAuthor1.TabIndex = 94;
+            // 
+            // lblAuthor2
+            // 
+            this.lblAuthor2.AutoSize = true;
+            this.lblAuthor2.Location = new System.Drawing.Point(31, 146);
+            this.lblAuthor2.Name = "lblAuthor2";
+            this.lblAuthor2.Size = new System.Drawing.Size(81, 24);
+            this.lblAuthor2.TabIndex = 110;
+            this.lblAuthor2.Text = "Author 2";
+            // 
+            // cbxComboBoxAuthor2
+            // 
+            this.cbxComboBoxAuthor2.BackColor = System.Drawing.Color.White;
+            this.cbxComboBoxAuthor2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxComboBoxAuthor2.FormattingEnabled = true;
+            this.cbxComboBoxAuthor2.Location = new System.Drawing.Point(205, 142);
+            this.cbxComboBoxAuthor2.Name = "cbxComboBoxAuthor2";
+            this.cbxComboBoxAuthor2.Size = new System.Drawing.Size(248, 32);
+            this.cbxComboBoxAuthor2.TabIndex = 96;
+            // 
+            // tbxISBN
+            // 
+            this.tbxISBN.Location = new System.Drawing.Point(205, 65);
+            this.tbxISBN.Mask = ">A-AAAAAAA-A-A";
+            this.tbxISBN.Name = "tbxISBN";
+            this.tbxISBN.Size = new System.Drawing.Size(248, 29);
+            this.tbxISBN.TabIndex = 5;
             // 
             // cbxComboBoxCategory
             // 
             this.cbxComboBoxCategory.BackColor = System.Drawing.Color.White;
             this.cbxComboBoxCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxComboBoxCategory.FormattingEnabled = true;
-            this.cbxComboBoxCategory.Location = new System.Drawing.Point(205, 209);
+            this.cbxComboBoxCategory.Location = new System.Drawing.Point(205, 299);
             this.cbxComboBoxCategory.Name = "cbxComboBoxCategory";
-            this.cbxComboBoxCategory.Size = new System.Drawing.Size(353, 32);
+            this.cbxComboBoxCategory.Size = new System.Drawing.Size(248, 32);
             this.cbxComboBoxCategory.TabIndex = 115;
             // 
-            // cbxComboBoxLanguage
+            // cbxComboBoxPublishedDate
             // 
-            this.cbxComboBoxLanguage.BackColor = System.Drawing.Color.White;
-            this.cbxComboBoxLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxComboBoxLanguage.FormattingEnabled = true;
-            this.cbxComboBoxLanguage.Location = new System.Drawing.Point(205, 249);
-            this.cbxComboBoxLanguage.Name = "cbxComboBoxLanguage";
-            this.cbxComboBoxLanguage.Size = new System.Drawing.Size(127, 32);
-            this.cbxComboBoxLanguage.TabIndex = 116;
+            this.cbxComboBoxPublishedDate.BackColor = System.Drawing.Color.White;
+            this.cbxComboBoxPublishedDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxComboBoxPublishedDate.FormattingEnabled = true;
+            this.cbxComboBoxPublishedDate.Location = new System.Drawing.Point(205, 222);
+            this.cbxComboBoxPublishedDate.Name = "cbxComboBoxPublishedDate";
+            this.cbxComboBoxPublishedDate.Size = new System.Drawing.Size(248, 32);
+            this.cbxComboBoxPublishedDate.TabIndex = 116;
             // 
-            // lblComments
+            // tbxLanguage
             // 
-            this.lblComments.AutoSize = true;
-            this.lblComments.Location = new System.Drawing.Point(33, 301);
-            this.lblComments.Name = "lblComments";
-            this.lblComments.Size = new System.Drawing.Size(101, 24);
-            this.lblComments.TabIndex = 117;
-            this.lblComments.Text = "Comments";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(205, 285);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(353, 29);
-            this.textBox1.TabIndex = 118;
-            // 
-            // tbxReplacementPrice
-            // 
-            this.tbxReplacementPrice.BackColor = System.Drawing.Color.White;
-            this.tbxReplacementPrice.Location = new System.Drawing.Point(550, 249);
-            this.tbxReplacementPrice.Name = "tbxReplacementPrice";
-            this.tbxReplacementPrice.ReadOnly = true;
-            this.tbxReplacementPrice.Size = new System.Drawing.Size(82, 29);
-            this.tbxReplacementPrice.TabIndex = 103;
+            this.tbxLanguage.BackColor = System.Drawing.Color.White;
+            this.tbxLanguage.Location = new System.Drawing.Point(205, 413);
+            this.tbxLanguage.Name = "tbxLanguage";
+            this.tbxLanguage.ReadOnly = true;
+            this.tbxLanguage.Size = new System.Drawing.Size(248, 29);
+            this.tbxLanguage.TabIndex = 118;
             // 
             // lblReplacementPrice
             // 
             this.lblReplacementPrice.AutoSize = true;
-            this.lblReplacementPrice.Location = new System.Drawing.Point(375, 252);
+            this.lblReplacementPrice.Location = new System.Drawing.Point(31, 341);
             this.lblReplacementPrice.Name = "lblReplacementPrice";
             this.lblReplacementPrice.Size = new System.Drawing.Size(170, 24);
             this.lblReplacementPrice.TabIndex = 119;
             this.lblReplacementPrice.Text = "Replacement Price";
             // 
+            // lblNumOfPages
+            // 
+            this.lblNumOfPages.AutoSize = true;
+            this.lblNumOfPages.Location = new System.Drawing.Point(31, 378);
+            this.lblNumOfPages.Name = "lblNumOfPages";
+            this.lblNumOfPages.Size = new System.Drawing.Size(161, 24);
+            this.lblNumOfPages.TabIndex = 121;
+            this.lblNumOfPages.Text = "Number Of Pages";
+            // 
+            // tbxNumOfPages
+            // 
+            this.tbxNumOfPages.BackColor = System.Drawing.Color.White;
+            this.tbxNumOfPages.Location = new System.Drawing.Point(205, 376);
+            this.tbxNumOfPages.Name = "tbxNumOfPages";
+            this.tbxNumOfPages.ReadOnly = true;
+            this.tbxNumOfPages.Size = new System.Drawing.Size(248, 29);
+            this.tbxNumOfPages.TabIndex = 120;
+            // 
+            // tbxComments
+            // 
+            this.tbxComments.BackColor = System.Drawing.Color.White;
+            this.tbxComments.Location = new System.Drawing.Point(205, 450);
+            this.tbxComments.Name = "tbxComments";
+            this.tbxComments.ReadOnly = true;
+            this.tbxComments.Size = new System.Drawing.Size(248, 29);
+            this.tbxComments.TabIndex = 123;
+            // 
+            // lblComments
+            // 
+            this.lblComments.AutoSize = true;
+            this.lblComments.Location = new System.Drawing.Point(31, 452);
+            this.lblComments.Name = "lblComments";
+            this.lblComments.Size = new System.Drawing.Size(101, 24);
+            this.lblComments.TabIndex = 122;
+            this.lblComments.Text = "Comments";
+            // 
             // frmAddBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 603);
+            this.ClientSize = new System.Drawing.Size(486, 717);
             this.Controls.Add(this.pnlForms);
             this.Controls.Add(this.mnuMain);
             this.Controls.Add(this.pnlTitle);
@@ -475,30 +459,29 @@ namespace SeniceroDAngelo_ScreenDesign.Forms
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMenuName;
+        private System.Windows.Forms.Label lblReplacementPrice;
+        private System.Windows.Forms.TextBox tbxLanguage;
+        private System.Windows.Forms.ComboBox cbxComboBoxPublishedDate;
+        private System.Windows.Forms.ComboBox cbxComboBoxCategory;
         private System.Windows.Forms.MaskedTextBox tbxISBN;
-        private System.Windows.Forms.Button btnXAuthor2;
-        private System.Windows.Forms.Button btnXAuthor1;
-        private System.Windows.Forms.ComboBox cbxAuthor2;
+        private System.Windows.Forms.ComboBox cbxComboBoxAuthor2;
         private System.Windows.Forms.Label lblAuthor2;
-        private System.Windows.Forms.ComboBox cbxAuthor1;
+        private System.Windows.Forms.ComboBox cbxComboBoxAuthor1;
         private System.Windows.Forms.Label lblAuthor1;
-        private System.Windows.Forms.ComboBox cbxPublisher;
+        private System.Windows.Forms.ComboBox cbxComboBoxPublisher;
         private System.Windows.Forms.Label lblPublisher;
+        private System.Windows.Forms.TextBox tbxReplacementPrice;
         private System.Windows.Forms.Label lblLanguage;
         private System.Windows.Forms.Label lblPublishedDate;
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.TextBox tbxDescription;
         private System.Windows.Forms.Label lblSummary;
         private System.Windows.Forms.Label lblISBN;
-        private System.Windows.Forms.TextBox tbxYear;
-        private System.Windows.Forms.Label lblYearPub;
         private System.Windows.Forms.TextBox tbxTitle;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.ComboBox cbxComboBoxCategory;
-        private System.Windows.Forms.ComboBox cbxComboBoxLanguage;
+        private System.Windows.Forms.Label lblNumOfPages;
+        private System.Windows.Forms.TextBox tbxNumOfPages;
+        private System.Windows.Forms.TextBox tbxComments;
         private System.Windows.Forms.Label lblComments;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox tbxReplacementPrice;
-        private System.Windows.Forms.Label lblReplacementPrice;
     }
 }

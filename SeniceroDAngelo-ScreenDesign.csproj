@@ -111,6 +111,48 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmManageAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManageAccounts.Designer.cs">
+      <DependentUpon>frmManageAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageAuthors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManageAuthors.Designer.cs">
+      <DependentUpon>frmManageAuthors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManageBooks.Designer.cs">
+      <DependentUpon>frmManageBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManagePublishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManagePublishers.Designer.cs">
+      <DependentUpon>frmManagePublishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageRentals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManageRentals.Designer.cs">
+      <DependentUpon>frmManageRentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManageSubjects.Designer.cs">
+      <DependentUpon>frmManageSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManageUsers.Designer.cs">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmPrintReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +185,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageAccounts.resx">
+      <DependentUpon>frmManageAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageAuthors.resx">
+      <DependentUpon>frmManageAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageBooks.resx">
+      <DependentUpon>frmManageBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManagePublishers.resx">
+      <DependentUpon>frmManagePublishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageRentals.resx">
+      <DependentUpon>frmManageRentals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageSubjects.resx">
+      <DependentUpon>frmManageSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageUsers.resx">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPrintReports.resx">
       <DependentUpon>frmPrintReports.cs</DependentUpon>

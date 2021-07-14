@@ -12,7 +12,7 @@ namespace SeniceroDAngelo_ScreenDesign
 
         public frmMain()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
         private void frmMain_Load(object sender,EventArgs e)
         {
@@ -63,13 +63,43 @@ namespace SeniceroDAngelo_ScreenDesign
 
         private void mnuMainItemAccountsItemAddAccount_Click(object sender,EventArgs e)
         {
-            frmAddAccount addAccounts = new frmAddAccount();
-            addAccounts.ShowDialog();
+            frmAddAccount addAccount = new frmAddAccount();
+            addAccount.ShowDialog();
         }
 
         private void mnuMainItemFileItemExit_Click(object sender,EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void mnuMainItemPublishersAddPublisher_Click(object sender,EventArgs e)
+        {
+            frmAddPublisher addPublisher = new frmAddPublisher();
+            addPublisher.ShowDialog();
+        }
+
+        private void mnuMainItemAuthorsItemAddAuthors_Click(object sender,EventArgs e)
+        {
+            frmAddAuthor addAuthor = new frmAddAuthor();
+            addAuthor.ShowDialog();
+        }
+
+        private void mnuMainItemUsersItemAddUser_Click(object sender,EventArgs e)
+        {
+            frmAddUser addUser = new frmAddUser();
+            addUser.ShowDialog();
+        }
+
+        private void mnuMainItemBooksItemAddBook_Click(object sender,EventArgs e)
+        {
+            frmAddBook addBook = new frmAddBook();
+            addBook.ShowDialog();
+        }
+
+        private void mnuMainItemSubjectsItemAddSubject_Click(object sender,EventArgs e)
+        {
+            frmAddSubject addSubject = new frmAddSubject();
+            addSubject.Show();
         }
     }
 }
